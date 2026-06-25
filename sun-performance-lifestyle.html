@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sun-Performance Lifestyle - Dossier marque</title>
+  <style>
+    :root {
+      --ink: #161815;
+      --muted: #60645d;
+      --line: #d9d7cf;
+      --paper: #fbfaf6;
+      --soft: #f1efe7;
+      --white: #ffffff;
+      --sun: #e6b84f;
+      --court: #2f7a5f;
+      --clay: #bd5a3d;
+      --navy: #263b56;
+      --sky: #d7e8ef;
+      --shadow: 0 18px 50px rgba(22, 24, 21, .10);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(22, 24, 21, .12);
+      background: rgba(251, 250, 246, .92);
+      backdrop-filter: blur(14px);
+    }
+
+    .topbar-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .mark {
+      width: 30px;
+      height: 30px;
+      border: 2px solid var(--ink);
+      display: grid;
+      place-items: center;
+      background: var(--sun);
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .35);
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 12px 0;
+    }
+
+    nav a {
+      padding: 8px 10px;
+      color: var(--muted);
+      font-size: 14px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: var(--ink);
+      background: var(--soft);
+    }
+
+    .hero {
+      min-height: calc(100vh - 64px);
+      display: grid;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(120deg, rgba(22, 24, 21, .78), rgba(22, 24, 21, .22) 52%, rgba(22, 24, 21, .72)),
+        url("https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=2200&q=85") center/cover;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 34%;
+      background: linear-gradient(0deg, var(--paper), rgba(251, 250, 246, 0));
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 96px 0 72px;
+      color: var(--white);
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, .14);
+      border: 1px solid rgba(255, 255, 255, .28);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .kicker span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--sun);
+    }
+
+    h1 {
+      max-width: 880px;
+      margin: 24px 0 18px;
+      font-size: clamp(44px, 7vw, 96px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 660px;
+      font-size: clamp(18px, 2vw, 24px);
+      color: rgba(255, 255, 255, .88);
+      margin: 0 0 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 6px;
+      font-weight: 800;
+      border: 1px solid transparent;
+    }
+
+    .button.primary {
+      background: var(--sun);
+      color: var(--ink);
+    }
+
+    .button.secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, .42);
+      background: rgba(255, 255, 255, .08);
+    }
+
+    main {
+      position: relative;
+      z-index: 2;
+    }
+
+    section {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .band {
+      background: var(--soft);
+    }
+
+    .dark {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 430px);
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 32px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--court);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .dark .eyebrow {
+      color: var(--sun);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 54px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .dark .lead,
+    .dark .muted {
+      color: rgba(255, 255, 255, .72);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid.cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid.cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 1px 0 rgba(22, 24, 21, .04);
+    }
+
+    .dark .card {
+      background: rgba(255, 255, 255, .06);
+      border-color: rgba(255, 255, 255, .16);
+      box-shadow: none;
+    }
+
+    .big-card {
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 9px;
+      margin-bottom: 14px;
+      background: var(--sky);
+      border-radius: 999px;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .tag.sun {
+      background: #f8df95;
+      color: #4b3700;
+    }
+
+    .tag.court {
+      background: #d8eee5;
+      color: #174b39;
+    }
+
+    .tag.clay {
+      background: #f0d5cc;
+      color: #74301d;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .58);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .quote {
+      font-size: clamp(26px, 4vw, 48px);
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .quote small {
+      display: block;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .metric {
+      display: grid;
+      gap: 6px;
+    }
+
+    .metric strong {
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .matrix {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      border: 1px solid var(--line);
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .quadrant {
+      min-height: 210px;
+      padding: 22px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      position: relative;
+    }
+
+    .quadrant:nth-child(2n) {
+      border-right: 0;
+    }
+
+    .quadrant:nth-last-child(-n + 2) {
+      border-bottom: 0;
+    }
+
+    .quadrant.target {
+      background: linear-gradient(135deg, #fff7dd, #e4f1ec);
+    }
+
+    .axis {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: table;
+    }
+
+    th,
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      background: var(--soft);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: var(--muted);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .score {
+      display: inline-grid;
+      place-items: center;
+      min-width: 32px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--ink);
+      color: var(--white);
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      counter-reset: phase;
+    }
+
+    .phase {
+      counter-increment: phase;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      position: relative;
+      min-height: 260px;
+    }
+
+    .phase::before {
+      content: counter(phase);
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--white);
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .product-card {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 280px;
+    }
+
+    .product-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .signal {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .signal-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--soft);
+      font-weight: 900;
+    }
+
+    .footer {
+      padding: 46px 0;
+      background: var(--ink);
+      color: rgba(255, 255, 255, .72);
+    }
+
+    .footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .topbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 12px;
+      }
+
+      nav {
+        width: 100%;
+      }
+
+      .section-head,
+      .grid.cols-2,
+      .grid.cols-3,
+      .grid.cols-4,
+      .timeline {
+        grid-template-columns: 1fr;
+      }
+
+      .matrix {
+        grid-template-columns: 1fr;
+      }
+
+      .quadrant,
+      .quadrant:nth-child(2n),
+      .quadrant:nth-last-child(-n + 2) {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .quadrant:last-child {
+        border-bottom: 0;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+
+    @media print {
+      .topbar,
+      .hero-actions {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        background: var(--paper);
+        color: var(--ink);
+      }
+
+      .hero-inner {
+        color: var(--ink);
+        padding: 40px 0;
+      }
+
+      .hero-copy {
+        color: var(--muted);
+      }
+
+      section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand-lockup" href="#top" aria-label="Retour en haut">
+        <span class="mark"></span>
+        <span>Sun-Performance Lifestyle</span>
+      </a>
+      <nav aria-label="Navigation">
+        <a href="#positionnement">Positionnement</a>
+        <a href="#personas">Personas</a>
+        <a href="#produits">Produits</a>
+        <a href="#concurrence">Concurrence</a>
+        <a href="#matrices">Matrices</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#action">Action</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="kicker"><span></span> Dossier marque - juin 2026</div>
+      <h1>Rester protege, sec et presentable dans les sports sous le soleil.</h1>
+      <p class="hero-copy">Une marque lifestyle-performance pour cadres actifs : padel, HYROX prep, CrossFit, running clubs, vacances sportives et moments club.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#produits">Voir quoi vendre</a>
+        <a class="button secondary" href="#concurrence">Comprendre le marche</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="positionnement">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Positionnement</p>
+            <h2>Pas une marque de sport de plus. Une categorie plus precise.</h2>
+          </div>
+          <p class="lead">La categorie a posseder : <strong>sun-performance lifestyle</strong>. Des essentiels techniques, beaux et portables socialement, concus pour les sports et moments actifs sous fort soleil.</p>
+        </div>
+
+        <div class="grid cols-3">
+          <article class="card big-card">
+            <span class="tag sun">Promesse</span>
+            <h3>Anti-UV. Anti-sueur. Toujours net.</h3>
+            <p class="muted">La phrase simple : le kit qui gere le soleil, la chaleur, la transpiration et l'apres-sport.</p>
+          </article>
+          <article class="card big-card">
+            <span class="tag court">Scene</span>
+            <h3>Sport, club, travel.</h3>
+            <p class="muted">Le padel donne l'esthetique sociale. HYROX/CrossFit donne la preuve sueur. Le voyage soleil donne l'usage recurrent.</p>
+          </article>
+          <article class="card big-card">
+            <span class="tag clay">Whitespace</span>
+            <h3>Technique solaire + lifestyle social.</h3>
+            <p class="muted">Le trou marche : aussi credible qu'un sun hoodie outdoor, mais assez propre pour le court, le club et le cafe apres match.</p>
+          </article>
+        </div>
+
+        <div class="grid cols-2" style="margin-top: 16px;">
+          <article class="card">
+            <p class="quote">La meilleure tenue quand le soleil, la sueur et le regard des autres sont presents en meme temps.<small>La tension commerciale a garder au centre de la marque.</small></p>
+          </article>
+          <article class="card">
+            <h3>Ce que la marque ne doit pas devenir</h3>
+            <ul>
+              <li>Une petite marque padel de plus.</li>
+              <li>Une marque activewear generaliste sans angle.</li>
+              <li>Une marque anti-UV medicale ou rando.</li>
+              <li>Une marque gymbro trop performance et pas assez lifestyle.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="personas">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Personas</p>
+            <h2>A qui vendre en premier.</h2>
+          </div>
+          <p class="lead">La cible a du pouvoir d'achat, pratique des sports sociaux et veut signaler discipline, forme et gout sans tomber dans le bling.</p>
+        </div>
+
+        <div class="grid cols-4">
+          <article class="card">
+            <span class="tag court">Persona 1</span>
+            <h3>Cadre padel-afterwork</h3>
+            <p class="muted">28-42 ans, consultant, sales, finance, tech, avocat, entrepreneur. Joue 1 a 3 fois par semaine.</p>
+            <ul>
+              <li>Besoin : court + club + cafe.</li>
+              <li>Pain : vetements techniques moches.</li>
+              <li>Produit : polo, tee UPF, casquette.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="tag clay">Persona 2</span>
+            <h3>Performer HYROX corporate</h3>
+            <p class="muted">25-40 ans, Garmin/Whoop, training frequent, aime mesurer, progresser, performer.</p>
+            <ul>
+              <li>Besoin : intensite + anti-frottement.</li>
+              <li>Pain : t-shirt trempe, odeur, irritation.</li>
+              <li>Produit : tee technique, bandeau, short.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="tag sun">Persona 3</span>
+            <h3>Voyageur actif soleil</h3>
+            <p class="muted">30-50 ans, Espagne, Portugal, Dubai, Grece, Cote d'Azur, Bali, Miami.</p>
+            <ul>
+              <li>Besoin : valise sport + soleil.</li>
+              <li>Pain : UPF trop rando/peche.</li>
+              <li>Produit : chemise, hoodie, casquette.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="tag">Persona 4</span>
+            <h3>Femme active premium</h3>
+            <p class="muted">27-42 ans, padel, Pilates, running club, HYROX doubles, vacances sportives.</p>
+            <ul>
+              <li>Besoin : protection + silhouette.</li>
+              <li>Pain : compromis style/protection.</li>
+              <li>Produit : long sleeve, jupe/short, visiere.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="produits">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Produits</p>
+            <h2>Le drop beta aout 2026 doit rester court.</h2>
+          </div>
+          <p class="lead">Aout est trop tard pour un gros lancement ete. Il faut vendre/tester un kit fondateur, recuperer de la preuve terrain et preparer le vrai drop printemps 2027.</p>
+        </div>
+
+        <div class="grid cols-4">
+          <article class="card product-card">
+            <div>
+              <span class="tag sun">Priorite 1</span>
+              <h3>Casquette technique UPF</h3>
+              <p class="muted">Produit d'entree, visible, facile a porter, bon add-on panier.</p>
+              <ul>
+                <li>Nylon/polyester light.</li>
+                <li>Bande anti-sueur.</li>
+                <li>Logo discret.</li>
+              </ul>
+            </div>
+            <div class="product-meta"><span>Prix cible</span><strong>35-55 EUR</strong></div>
+          </article>
+
+          <article class="card product-card">
+            <div>
+              <span class="tag clay">Hero</span>
+              <h3>Long sleeve UPF 50</h3>
+              <p class="muted">Produit qui porte le positionnement : soleil, sueur, style.</p>
+              <ul>
+                <li>Quick-dry.</li>
+                <li>Anti-frottement.</li>
+                <li>Coupe propre.</li>
+              </ul>
+            </div>
+            <div class="product-meta"><span>Prix cible</span><strong>65-95 EUR</strong></div>
+          </article>
+
+          <article class="card product-card">
+            <div>
+              <span class="tag court">Accessoire</span>
+              <h3>Bandeau / poignets sueur</h3>
+              <p class="muted">Faible risque, forte identite sport, bon produit de communaute.</p>
+              <ul>
+                <li>Couleurs de drop.</li>
+                <li>Packaging premium.</li>
+                <li>Facile a offrir.</li>
+              </ul>
+            </div>
+            <div class="product-meta"><span>Prix cible</span><strong>18-28 EUR</strong></div>
+          </article>
+
+          <article class="card product-card">
+            <div>
+              <span class="tag">Bundle</span>
+              <h3>Serviette club compacte</h3>
+              <p class="muted">Accessoire de club, utile au padel/HYROX, bon support de marque.</p>
+              <ul>
+                <li>Compacte.</li>
+                <li>Seche vite.</li>
+                <li>Incluse en kit.</li>
+              </ul>
+            </div>
+            <div class="product-meta"><span>Prix cible</span><strong>25-45 EUR</strong></div>
+          </article>
+        </div>
+
+        <div style="margin-top: 28px;">
+          <table>
+            <thead>
+              <tr>
+                <th>Produit</th>
+                <th>Desirabilite</th>
+                <th>Faisabilite</th>
+                <th>Marge</th>
+                <th>Role</th>
+                <th>Priorite</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Casquette technique UPF</td>
+                <td>Haute</td>
+                <td>Haute</td>
+                <td>Haute</td>
+                <td>Entree, visibilite, bundle</td>
+                <td><span class="score">1</span></td>
+              </tr>
+              <tr>
+                <td>Long sleeve UPF 50</td>
+                <td>Tres haute</td>
+                <td>Moyenne</td>
+                <td>Moyenne/haute</td>
+                <td>Produit hero</td>
+                <td><span class="score">1</span></td>
+              </tr>
+              <tr>
+                <td>Bandeau / poignets</td>
+                <td>Moyenne</td>
+                <td>Tres haute</td>
+                <td>Haute</td>
+                <td>Identite sport</td>
+                <td><span class="score">1</span></td>
+              </tr>
+              <tr>
+                <td>Polo technique UPF</td>
+                <td>Haute</td>
+                <td>Moyenne</td>
+                <td>Haute</td>
+                <td>Padel / club premium</td>
+                <td><span class="score">2</span></td>
+              </tr>
+              <tr>
+                <td>Short padel / training</td>
+                <td>Haute</td>
+                <td>Moyenne basse</td>
+                <td>Haute</td>
+                <td>Completer silhouette</td>
+                <td><span class="score">2</span></td>
+              </tr>
+              <tr>
+                <td>Chemise UPF packable</td>
+                <td>Haute</td>
+                <td>Moyenne basse</td>
+                <td>Haute</td>
+                <td>Voyage actif</td>
+                <td><span class="score">3</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark" id="concurrence">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Concurrence</p>
+            <h2>Le marche existe, mais personne ne possede exactement notre angle.</h2>
+          </div>
+          <p class="lead">Il faut respecter les concurrents : ils sont forts. L'opportunite vient de leur specialisation incomplete.</p>
+        </div>
+
+        <div class="grid cols-3">
+          <article class="card">
+            <h3>Activewear premium</h3>
+            <p class="muted">Lululemon, Vuori, Rhone, Alo, On.</p>
+            <ul>
+              <li>Force : desirabilite et confiance.</li>
+              <li>Faiblesse : trop generaliste.</li>
+              <li>Notre angle : soleil + sport social.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>UPF specialists</h3>
+            <p class="muted">Coolibar, Solbari, Mott 50, Cabana Life.</p>
+            <ul>
+              <li>Force : protection solaire.</li>
+              <li>Faiblesse : moins aspirationnel.</li>
+              <li>Notre angle : UPF sans look medical.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Outdoor sun</h3>
+            <p class="muted">Patagonia, Columbia, Arc'teryx, The North Face.</p>
+            <ul>
+              <li>Force : vraie technique terrain.</li>
+              <li>Faiblesse : imaginaire rando/peche.</li>
+              <li>Notre angle : protection club/city.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Padel lifestyle</h3>
+            <p class="muted">Cuera, Padelhüd, PSF, Pulco, Padeloupe.</p>
+            <ul>
+              <li>Force : culture court/club.</li>
+              <li>Faiblesse : souvent padel-only.</li>
+              <li>Notre angle : padel + training + voyage.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Fitness racing</h3>
+            <p class="muted">PUMA HYROX, Ten Thousand, Gymshark, Born Primitive.</p>
+            <ul>
+              <li>Force : intensite et performance.</li>
+              <li>Faiblesse : peu solaire/social.</li>
+              <li>Notre angle : training chaud + presentabilite.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Substituts</h3>
+            <p class="muted">Decathlon, Amazon, Uniqlo, creme solaire, casquette Nike.</p>
+            <ul>
+              <li>Force : prix et accessibilite.</li>
+              <li>Faiblesse : pas de monde de marque.</li>
+              <li>Notre angle : kit coherent et premium.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="matrices">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Matrices</p>
+            <h2>Le positionnement se lit en un coup d'oeil.</h2>
+          </div>
+          <p class="lead">La marque doit rester dans le cadran technique solaire + lifestyle social. C'est la zone la moins occupee.</p>
+        </div>
+
+        <div class="matrix" aria-label="Matrice de positionnement">
+          <div class="quadrant">
+            <p class="axis">Technique solaire elevee / lifestyle faible</p>
+            <h3>Coolibar, Solbari, Columbia</h3>
+            <p class="muted">Credibles sur la protection, moins desirables pour un cadre padel/HYROX.</p>
+          </div>
+          <div class="quadrant target">
+            <p class="axis">Technique solaire elevee / lifestyle eleve</p>
+            <h3>Notre cible</h3>
+            <p class="muted">Sun-performance essentials for sport, club and travel.</p>
+          </div>
+          <div class="quadrant">
+            <p class="axis">Technique faible / lifestyle faible</p>
+            <h3>Generiques Amazon / merch club</h3>
+            <p class="muted">Prix bas, mais peu de preuve, peu de desir, peu de retention.</p>
+          </div>
+          <div class="quadrant">
+            <p class="axis">Lifestyle eleve / technique solaire faible</p>
+            <h3>Alo, Vuori, PSF, Padelhüd</h3>
+            <p class="muted">Desirables, mais pas proprietaires sur UV + chaleur + sueur.</p>
+          </div>
+        </div>
+
+        <div class="grid cols-2" style="margin-top: 24px;">
+          <article class="card">
+            <h3>SWOT rapide</h3>
+            <div class="grid cols-2">
+              <div>
+                <strong>Forces</strong>
+                <ul>
+                  <li>Angle clair.</li>
+                  <li>Cible solvable.</li>
+                  <li>Produits testables.</li>
+                </ul>
+              </div>
+              <div>
+                <strong>Faiblesses</strong>
+                <ul>
+                  <li>Pas encore de preuve.</li>
+                  <li>Textile technique exigeant.</li>
+                  <li>Saison 2026 tardive.</li>
+                </ul>
+              </div>
+              <div>
+                <strong>Opportunites</strong>
+                <ul>
+                  <li>Padel + HYROX en croissance.</li>
+                  <li>UPF devient plus mode.</li>
+                  <li>Clubs et communautes.</li>
+                </ul>
+              </div>
+              <div>
+                <strong>Menaces</strong>
+                <ul>
+                  <li>Gros acteurs.</li>
+                  <li>Copies private label.</li>
+                  <li>Claims UPF fragiles.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Pain points par potentiel commercial</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Pain</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>T-shirt trempe / frottement</td><td><span class="score">19</span></td></tr>
+                <tr><td>Look moche des vetements anti-UV</td><td><span class="score">18</span></td></tr>
+                <tr><td>Besoin sport + apres-sport</td><td><span class="score">18</span></td></tr>
+                <tr><td>Protection solaire contraignante</td><td><span class="score">16</span></td></tr>
+                <tr><td>Statut discret</td><td><span class="score">16</span></td></tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="roadmap">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Roadmap</p>
+            <h2>Aout 2026 sert a apprendre. 2027 sert a vendre fort.</h2>
+          </div>
+          <p class="lead">Le timing impose une strategie long terme. Il faut transformer la fin d'ete 2026 en laboratoire terrain et en machine a preuves.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="phase">
+            <h3>Aout - sept. 2026</h3>
+            <p class="muted">Beta drop / field testing.</p>
+            <ul>
+              <li>Commander echantillons.</li>
+              <li>Tester sur padel et training.</li>
+              <li>Créer contenu reel.</li>
+              <li>Recruter 20-50 testeurs.</li>
+            </ul>
+          </article>
+          <article class="phase">
+            <h3>Oct. - dec. 2026</h3>
+            <p class="muted">Marque + communaute.</p>
+            <ul>
+              <li>Nom, identite, site.</li>
+              <li>Partenariats clubs.</li>
+              <li>Waitlist 2027.</li>
+              <li>Sourcing final.</li>
+            </ul>
+          </article>
+          <article class="phase">
+            <h3>Jan. - mars 2027</h3>
+            <p class="muted">Pre-saison.</p>
+            <ul>
+              <li>Precommandes.</li>
+              <li>Ambassadeurs.</li>
+              <li>Ads testees.</li>
+              <li>PR sport/lifestyle.</li>
+            </ul>
+          </article>
+          <article class="phase">
+            <h3>Avril - juillet 2027</h3>
+            <p class="muted">Vrai lancement.</p>
+            <ul>
+              <li>Drop principal.</li>
+              <li>Tournois padel.</li>
+              <li>Pop-ups clubs.</li>
+              <li>Bundles vacances.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="action">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Action</p>
+            <h2>Ce qu'il faut faire maintenant.</h2>
+          </div>
+          <p class="lead">La priorite n'est pas d'avoir 20 produits. La priorite est de trouver 4 produits assez bons pour prouver la categorie.</p>
+        </div>
+
+        <div class="grid cols-3">
+          <article class="card signal">
+            <div class="signal-icon">1</div>
+            <div>
+              <h3>Sourcing</h3>
+              <p class="muted">Shortlist Alibaba de fournisseurs capables de prouver UPF 50+, quick-dry, bonnes finitions et MOQ raisonnables.</p>
+            </div>
+          </article>
+          <article class="card signal">
+            <div class="signal-icon">2</div>
+            <div>
+              <h3>Tests terrain</h3>
+              <p class="muted">90 min padel soleil, training intense, lavage 5 cycles, photo humide, odeur apres sac ferme.</p>
+            </div>
+          </article>
+          <article class="card signal">
+            <div class="signal-icon">3</div>
+            <div>
+              <h3>Landing + waitlist</h3>
+              <p class="muted">Tester 3 angles : padel social, UPF premium, HYROX/training chaud. Mesurer signup et intention d'achat.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="card big-card" style="margin-top: 24px;">
+          <p class="quote">Le premier drop ne doit pas prouver que vous pouvez faire une marque de vetements. Il doit prouver que des gens veulent ce mode de vie en kit.<small>Kit recommande : casquette technique + long sleeve UPF + bandeau/poignets + serviette club.</small></p>
+          <div class="pill-row">
+            <span class="pill">Anti-UV</span>
+            <span class="pill">Quick-dry</span>
+            <span class="pill">Anti-frottement</span>
+            <span class="pill">Club-ready</span>
+            <span class="pill">Travel-ready</span>
+            <span class="pill">Padel first</span>
+            <span class="pill">2027 launch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>Positionnement final :</strong> des essentiels techniques pour rester protege, sec et presentable dans les sports sous le soleil.</p>
+    </div>
+  </footer>
+</body>
+</html>
