@@ -53,6 +53,15 @@ Sixam combines:
 3. Premium fit and status.
 4. Sport-social use cases: padel, running, training, travel.
 
+Competitive inspiration:
+
+- Asian sun-protection brands are strong at practical anti-UV product engineering: cooling, face/neck coverage, sleeves, packability, UPF proof.
+- Japanese mass brands make UV practical and everyday: AIRism, UV cut, breathable layers.
+- Scandinavian brands make technical products feel premium through restraint, simple cuts and minimal copy.
+- Premium performance brands like On, Hoka and Lululemon keep the page sparse and let product/visuals carry value.
+
+Sixam should combine Asian functionality, Scandinavian restraint and premium performance pricing.
+
 Sixam is not:
 
 - Low-cost activewear.
@@ -87,3 +96,6 @@ The offer should feel premium. Do not race to low pricing.
 - Do not over-explain the market in the landing page.
 - Do not say "France anti-UV market is underserved" on the customer-facing page.
 - Specs support the purchase, identity creates desire.
+- Use fewer words than feels comfortable.
+- Prefer short premium sentences over explanatory paragraphs.
+- Product page copy should feel written by a French-speaking brand editor.

@@ -15,6 +15,13 @@ Reference feel:
 
 Sixam should feel expensive, not loud.
 
+Updated competitive lesson:
+
+- Asian anti-UV brands: strong feature systems, but often too utilitarian for Sixam.
+- Japanese UV basics: practical, simple, everyday.
+- Scandinavian brands: restrained, clean, high-trust.
+- On / Hoka / Lululemon: large visual surface, short copy, few CTAs.
+
 ## Visual principles
 
 - Mobile-first.
@@ -25,6 +32,9 @@ Sixam should feel expensive, not loud.
 - Use large editorial typography, but keep the sentence clear.
 - Use dark premium backgrounds with acid-lime as an accent, not as decoration everywhere.
 - Product should feel like premium equipment, not cheap ecommerce cards.
+- Avoid long paragraphs on mobile.
+- Use short blocks: headline, one sentence, proof chips only where useful.
+- Characteristics should scan in 2 seconds.
 
 ## Required page architecture
 
