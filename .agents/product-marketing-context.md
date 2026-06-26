@@ -18,7 +18,7 @@ Stay protected, dry and well-dressed when the sun hits.
 
 French hero direction:
 
-Des vêtements anti-UV premium pour le sport au soleil.
+Des vêtements anti-UV premium pour les sports au soleil.
 
 Rejected hero line:
 
@@ -31,7 +31,7 @@ Primary persona:
 - 28-45 years old.
 - High disposable income.
 - Urban or peri-urban, active social life.
-- Padel, tennis, running, HYROX prep, CrossFit, travel in sunny places.
+- Sports au soleil, tennis, padel, running, HYROX prep, CrossFit, club sport and sunny travel.
 - Buys premium brands like On, Hoka, Lululemon, Vuori, Alo, Nike premium.
 - Believes higher price often signals better quality.
 - Wants to look athletic, disciplined and premium, even if not a pro athlete.
@@ -55,7 +55,7 @@ Sixam combines:
 1. Anti-UV protection.
 2. Sweat management.
 3. Premium fit and status.
-4. Sport-social use cases: padel, running, training, travel.
+4. Sport-social use cases: sports au soleil, club sport, training, running and sunny travel.
 
 Competitive inspiration:
 
@@ -64,7 +64,11 @@ Competitive inspiration:
 - Scandinavian brands make technical products feel premium through restraint, simple cuts and minimal copy.
 - Premium performance brands like On, Hoka and Lululemon keep the page sparse and let product/visuals carry value.
 
-Sixam should combine Asian functionality, Scandinavian restraint and premium performance pricing.
+Sixam should combine practical anti-UV engineering, restrained premium design and performance pricing.
+
+Important customer-facing rule:
+
+Do not say "Asian functionality", "Scandinavian restraint" or similar research shorthand on the site. These are internal strategic references only. The customer-facing version is: protection solaire, matières respirantes, coupe premium, détails anti-sueur.
 
 Sixam is not:
 
@@ -77,16 +81,18 @@ Sixam is not:
 
 Founding drop:
 
-- Long Sleeve UPF 50+ target: 95 EUR.
+- Top UPF 50+ target: 95 EUR.
 - Sixam Sun Cap: 55 EUR.
+- Bandana UV: 39 EUR.
+- UV sleeves / manchons: 35 EUR.
 - Sweat Control Kit: 35 EUR.
-- Founder Pack: 159 EUR.
+- Founder Pack: 179 EUR.
 
 The offer should feel premium. Do not race to low pricing.
 
 ## Messaging hierarchy
 
-1. Clear value proposition: premium anti-UV sportswear for sport under the sun.
+1. Clear value proposition: premium anti-UV sportswear for sports under the sun.
 2. Problem: normal sport clothing fails in heat, UV and sweat.
 3. Solution: anti-UV, breathable, premium cut.
 4. Offer: simple founding drop.
@@ -103,3 +109,4 @@ The offer should feel premium. Do not race to low pricing.
 - Use fewer words than feels comfortable.
 - Prefer short premium sentences over explanatory paragraphs.
 - Product page copy should feel written by a French-speaking brand editor.
+- Avoid over-listing sports in the hero. The brand is bigger than padel. Use "sports au soleil" and "voyage" first, then specific sports only as examples deeper on the page.

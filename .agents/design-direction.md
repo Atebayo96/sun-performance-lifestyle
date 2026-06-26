@@ -4,7 +4,7 @@ Date: 2026-06-26
 
 ## Design target
 
-Premium, technical, restrained.
+Premium, technical, sunny, restrained.
 
 Reference feel:
 
@@ -13,7 +13,7 @@ Reference feel:
 - Lululemon technical product pages
 - Vuori understated active lifestyle
 
-Sixam should feel expensive, not loud.
+Sixam should feel expensive, bright and active, not loud or low-cost.
 
 Updated competitive lesson:
 
@@ -30,7 +30,8 @@ Updated competitive lesson:
 - No secondary button in the hero on mobile.
 - Avoid crowded chips and badges above the fold.
 - Use large editorial typography, but keep the sentence clear.
-- Use dark premium backgrounds with acid-lime as an accent, not as decoration everywhere.
+- Use a sunny premium palette instead of a black tech palette.
+- The brand should feel like sport outside: light, heat, courts, travel, club, clean silhouettes.
 - Product should feel like premium equipment, not cheap ecommerce cards.
 - Avoid long paragraphs on mobile.
 - Use short blocks: headline, one sentence, proof chips only where useful.
@@ -53,8 +54,10 @@ Updated competitive lesson:
    - Premium fit.
 
 4. Offer:
-   - Long Sleeve UPF.
+   - Top UPF.
    - Sun Cap.
+   - Bandana UV.
+   - UV sleeves / manchons.
    - Sweat Control Kit.
    - Founder pack.
 
@@ -82,9 +85,11 @@ Use plain French.
 
 Good:
 
-- Des vêtements anti-UV premium pour le sport au soleil.
+- Des vêtements anti-UV premium pour les sports au soleil.
 - Protection solaire, tissu respirant, coupe soignée.
-- Conçu pour padel, running, training et voyages au soleil.
+- Pour jouer, courir, s'entraîner et voyager quand la journée se passe dehors.
+- Le soleil, la sueur, les vêtements qui collent.
+- Protéger du soleil sans perdre l'allure.
 
 Bad:
 
@@ -92,6 +97,8 @@ Bad:
 - Reste net quand le soleil tape as the main H1.
 - Comprendre le monde.
 - Uniforme solaire / beta drop as the main selling idea.
+- La fonction asiatique. La retenue scandinave. Le prix premium.
+- Conçu pour padel, running, training et voyages au soleil as hero copy because it makes Sixam feel too narrow and awkward.
 
 ## Motion direction
 
@@ -111,11 +118,11 @@ Avoid:
 
 ## Color system
 
-- Background: near black.
-- Text: warm off-white.
-- Accent: acid lime.
-- Secondary: clay / sun used sparingly.
-- Light sections: warm sand.
+- Background: warm ivory / solar cream.
+- Text: deep ink.
+- Primary accent: sun yellow.
+- Secondary accents: deep green, soft sky, clay.
+- Dark sections are allowed only for contrast, not as the whole brand world.
 
 ## Image direction
 

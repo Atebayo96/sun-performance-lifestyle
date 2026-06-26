@@ -82,9 +82,13 @@ Sixam must track three competitive clusters:
 
 Sixam should combine:
 
-- Asian functionality.
-- Scandinavian restraint.
+- Practical anti-UV functionality inspired by Asian product depth.
+- Restrained premium design inspired by Scandinavian and performance brands.
 - Premium performance pricing and polish.
+
+Internal shorthand only:
+
+"Asian functionality" and "Scandinavian restraint" are useful research labels, not customer-facing copy.
 
 Updated site rule:
 
@@ -92,8 +96,14 @@ Do not explain too much. Make the product feel obvious.
 
 Better copy direction:
 
-- Des vêtements anti-UV premium pour le sport au soleil.
-- Reste net quand le soleil tape.
+- Des vêtements anti-UV premium pour les sports au soleil.
+- Protéger du soleil sans perdre l'allure.
+- Le soleil, la sueur, les vêtements qui collent.
 - Protection solaire. Tissu respirant. Coupe soignée.
-- Pour padel, running, training et voyages au soleil.
+- Pour jouer, courir, s'entraîner et voyager quand la journée se passe dehors.
 
+Avoid:
+
+- La fonction asiatique. La retenue scandinave. Le prix premium.
+- Conçu pour padel, running, training et voyages au soleil.
+- Over-listing sports in the hero. Sixam should feel broader than a padel niche.
