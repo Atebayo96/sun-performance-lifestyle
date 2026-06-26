@@ -81,20 +81,24 @@ Sixam is not:
 
 Founding drop:
 
-- Top UPF 50+ target: 95 EUR.
-- Sixam Sun Cap: 55 EUR.
+- Visiere Sixam: 49 EUR.
+- UV armbands / brassards: 35 EUR.
 - Bandana UV: 39 EUR.
-- UV sleeves / manchons: 35 EUR.
 - Sweat Control Kit: 35 EUR.
-- Founder Pack: 179 EUR.
+- Founder Pack: 149 EUR.
+
+Extension products:
+
+- Top UPF 50+ target: 95 EUR.
+- Sixam Sun Cap / cap variant: 55 EUR.
 
 The offer should feel premium. Do not race to low pricing.
 
 ## Messaging hierarchy
 
 1. Clear value proposition: premium anti-UV sportswear for sports under the sun.
-2. Problem: normal sport clothing fails in heat, UV and sweat.
-3. Solution: anti-UV, breathable, premium cut.
+2. Brand identity: sunny premium sport identity, not a strategic brief.
+3. Product signatures: visiere, brassards, bandana, sweat accessories, then apparel.
 4. Offer: simple founding drop.
 5. Access: founder waitlist.
 
@@ -110,3 +114,6 @@ The offer should feel premium. Do not race to low pricing.
 - Prefer short premium sentences over explanatory paragraphs.
 - Product page copy should feel written by a French-speaking brand editor.
 - Avoid over-listing sports in the hero. The brand is bigger than padel. Use "sports au soleil" and "voyage" first, then specific sports only as examples deeper on the page.
+- The public page is not the research brief. Do not expose matrices, competitor logic or internal positioning explanations.
+- Avoid big stacked explanation cards for UV / sweat / style. Use lighter editorial rows, product visuals, short signatures and collection cards.
+- First visible product signals should be Sixam-branded accessories: visiere first, brassards second.

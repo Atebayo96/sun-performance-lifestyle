@@ -36,6 +36,7 @@ Updated competitive lesson:
 - Avoid long paragraphs on mobile.
 - Use short blocks: headline, one sentence, proof chips only where useful.
 - Characteristics should scan in 2 seconds.
+- Avoid big stacked white cards for conceptual explanations. Use editorial rows, visual rhythm, product tiles and short signature chips.
 
 ## Required page architecture
 
@@ -46,19 +47,20 @@ Updated competitive lesson:
    - One short product/drop note.
 
 2. Problem:
-   - Standard sportswear fails under sun, heat and sweat.
+   - Keep it light and identity-led.
+   - Avoid making this section feel like a business brief.
 
 3. Solution:
-   - Anti-UV.
-   - Anti-sweat / quick-dry.
-   - Premium fit.
+   - Show the Sixam product world.
+   - Accessories as style markers.
+   - Technical benefits stay secondary.
 
 4. Offer:
-   - Top UPF.
-   - Sun Cap.
+   - Visiere Sixam.
+   - Brassards UV.
    - Bandana UV.
-   - UV sleeves / manchons.
    - Sweat Control Kit.
+   - Top UPF.
    - Founder pack.
 
 5. Waitlist:
@@ -90,6 +92,8 @@ Good:
 - Pour jouer, courir, s'entraîner et voyager quand la journée se passe dehors.
 - Le soleil, la sueur, les vêtements qui collent.
 - Protéger du soleil sans perdre l'allure.
+- Des accessoires solaires, pensés comme des marqueurs de style.
+- Le premier signe Sixam doit se voir vite.
 
 Bad:
 
@@ -99,6 +103,8 @@ Bad:
 - Uniforme solaire / beta drop as the main selling idea.
 - La fonction asiatique. La retenue scandinave. Le prix premium.
 - Conçu pour padel, running, training et voyages au soleil as hero copy because it makes Sixam feel too narrow and awkward.
+- Performance sociale as a visible label.
+- Page copy that sounds like a brand strategy memo instead of a product/store page.
 
 ## Motion direction
 

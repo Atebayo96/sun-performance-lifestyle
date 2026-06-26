@@ -367,12 +367,6 @@
       gap: 14px;
     }
 
-    .problem-grid,
-    .detail-grid {
-      display: grid;
-      gap: 12px;
-    }
-
     .card,
     .product,
     .detail,
@@ -398,6 +392,50 @@
     }
 
     .muted { color: var(--muted); }
+
+    .signal-list {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .signal {
+      display: grid;
+      gap: 5px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .signal:last-child {
+      border-bottom: 0;
+    }
+
+    .signal strong {
+      font-size: 18px;
+      line-height: 1.08;
+    }
+
+    .signature-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .signature-row span {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 12px;
+      border: 1px solid rgba(20,21,15,.13);
+      border-radius: 999px;
+      background: rgba(255,255,255,.5);
+      color: rgba(20,21,15,.72);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
 
     .solution-band {
       background:
@@ -450,6 +488,20 @@
       font-size: 12px;
       font-weight: 950;
       backdrop-filter: blur(12px);
+    }
+
+    .brand-line {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    .brand-line p {
+      max-width: 560px;
+      color: rgba(20,21,15,.72);
+      font-size: 17px;
     }
 
     .collection-grid {
@@ -653,9 +705,10 @@
     }
 
     @media (min-width: 680px) {
-      .problem-grid,
-      .detail-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+      .signal {
+        grid-template-columns: 160px 1fr;
+        align-items: baseline;
+        gap: 24px;
       }
 
       .collection-grid {
@@ -757,24 +810,32 @@
       <section id="probleme">
         <div class="wrap reveal">
           <div class="section-head">
-            <p class="eyebrow">Ce qu'on règle</p>
-            <h2>Le soleil, la sueur, les vêtements qui collent.</h2>
-            <p class="lead">Le sportswear classique n'a pas été pensé pour les longues heures dehors : il chauffe, marque et protège mal.</p>
+            <p class="eyebrow">Identité</p>
+            <h2>Une marque solaire pour ceux qui vivent le sport dehors.</h2>
+            <p class="lead">Sixam habille les sessions au soleil : club, course, training, voyage. Des pièces propres, techniques, immédiatement reconnaissables.</p>
           </div>
 
-          <div class="problem-grid">
-            <article class="card">
-              <strong>UV.</strong>
-              <p class="muted">Une couche textile qui complète la crème, surtout quand l'effort dure.</p>
-            </article>
-            <article class="card">
-              <strong>Sueur.</strong>
-              <p class="muted">Des matières légères qui sèchent vite et évitent l'effet t-shirt trempé.</p>
-            </article>
-            <article class="card">
+          <div class="signal-list">
+            <div class="signal">
+              <strong>Soleil.</strong>
+              <p class="muted">Protection textile, visières, brassards et zones exposées couvertes.</p>
+            </div>
+            <div class="signal">
+              <strong>Effort.</strong>
+              <p class="muted">Matières légères, séchage rapide, détails anti-sueur.</p>
+            </div>
+            <div class="signal">
               <strong>Allure.</strong>
-              <p class="muted">Une silhouette sport premium, pas un look randonnée ou médical.</p>
-            </article>
+              <p class="muted">Un rendu premium, pas outdoor technique, pas médical.</p>
+            </div>
+          </div>
+
+          <div class="signature-row" aria-label="Signature Sixam">
+            <span>Anti-UV</span>
+            <span>Anti-sueur</span>
+            <span>Club</span>
+            <span>Voyage</span>
+            <span>Soleil</span>
           </div>
         </div>
       </section>
@@ -785,23 +846,13 @@
             <div>
               <div class="section-head">
                 <p class="eyebrow">La réponse Sixam</p>
-                <h2>Une tenue solaire qui se porte comme une marque premium.</h2>
-                <p class="lead">Sixam part d'une idée simple : protéger du soleil sans perdre l'allure. Chaque pièce doit être utile pendant l'effort et propre après l'effort.</p>
+                <h2>Des accessoires solaires, pensés comme des marqueurs de style.</h2>
+                <p class="lead">La visière, les brassards, le bandana, le top. Chaque pièce protège, absorbe ou couvre, mais l'ensemble doit surtout donner envie d'être porté.</p>
               </div>
 
-              <div class="detail-grid">
-                <article class="detail">
-                  <strong>Couvrir mieux.</strong>
-                  <p class="muted">Tops, manchons, casquettes et bandanas pour les zones qui prennent le soleil.</p>
-                </article>
-                <article class="detail">
-                  <strong>Sécher vite.</strong>
-                  <p class="muted">Matières respirantes, légères, adaptées aux sessions chaudes.</p>
-                </article>
-                <article class="detail">
-                  <strong>Rester net.</strong>
-                  <p class="muted">Coupes sobres, couleurs solaires, détails pensés pour le club et le voyage.</p>
-                </article>
+              <div class="brand-line">
+                <p>Le premier signe Sixam doit se voir vite : une visière nette, un brassard propre, une couleur solaire, une silhouette qui dit sport premium sans avoir besoin de l'expliquer.</p>
+                <p>La technique reste là : UPF, séchage rapide, gestion de la sueur. Elle soutient l'image, elle ne prend pas toute la place.</p>
               </div>
             </div>
 
@@ -812,7 +863,7 @@
               </figure>
               <figure class="visual-card">
                 <img src="https://images.pexels.com/photos/23379597/pexels-photo-23379597.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Raquettes et filet sur un court extérieur">
-                <figcaption class="visual-label">Performance sociale</figcaption>
+                <figcaption class="visual-label">Signature Sixam</figcaption>
               </figure>
             </div>
           </div>
@@ -823,39 +874,39 @@
         <div class="wrap reveal">
           <div class="section-head">
             <p class="eyebrow">Collection solaire</p>
-            <h2>Les pièces à lancer en premier.</h2>
-            <p class="lead">Une base courte, lisible, premium : vêtements couvrants, accessoires anti-soleil et détails anti-sueur.</p>
+            <h2>Premier drop : visières, brassards, pièces solaires.</h2>
+            <p class="lead">On commence par les accessoires qui signent la marque, puis on élargit vers les vêtements anti-UV.</p>
           </div>
 
           <div class="collection-grid">
             <article class="product">
-              <img src="https://images.pexels.com/photos/31559342/pexels-photo-31559342.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Joueur en tenue sport premium sur court">
+              <img src="https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sportive sur court extérieur">
               <div class="product-body">
                 <div class="product-line">
-                  <span>Top UPF 50+</span>
-                  <span class="price">95 EUR</span>
+                  <span>Visière Sixam</span>
+                  <span class="price">49 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Couvrant, léger, respirant.</p>
+                <p class="muted" style="margin-top:10px;">Légère, solaire, bande anti-sueur.</p>
                 <div class="specs">
-                  <span class="spec">UPF cible</span>
-                  <span class="spec">quick-dry</span>
-                  <span class="spec">coupe nette</span>
+                  <span class="spec">signature</span>
+                  <span class="spec">anti-sueur</span>
+                  <span class="spec">club</span>
                 </div>
               </div>
             </article>
 
             <article class="product">
-              <img src="https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sportive sur court extérieur">
+              <img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Balle et raquette sur court ensoleillé">
               <div class="product-body">
                 <div class="product-line">
-                  <span>Sixam Sun Cap</span>
-                  <span class="price">55 EUR</span>
+                  <span>Brassards UV</span>
+                  <span class="price">35 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Visière, bande anti-sueur, tissu léger.</p>
+                <p class="muted" style="margin-top:10px;">Bras protégés, tenue légère, look net.</p>
                 <div class="specs">
-                  <span class="spec">soleil</span>
-                  <span class="spec">anti-sueur</span>
-                  <span class="spec">club</span>
+                  <span class="spec">UPF cible</span>
+                  <span class="spec">bras</span>
+                  <span class="spec">packable</span>
                 </div>
               </div>
             </article>
@@ -877,17 +928,17 @@
             </article>
 
             <article class="product">
-              <img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Balle et raquette sur court ensoleillé">
+              <img src="https://images.pexels.com/photos/31559342/pexels-photo-31559342.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Joueur en tenue sport premium sur court">
               <div class="product-body">
                 <div class="product-line">
-                  <span>Manchons UV</span>
-                  <span class="price">35 EUR</span>
+                  <span>Top UPF 50+</span>
+                  <span class="price">95 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Protection des bras sans couche complète.</p>
+                <p class="muted" style="margin-top:10px;">Couvrant, léger, respirant.</p>
                 <div class="specs">
-                  <span class="spec">bras</span>
                   <span class="spec">UPF cible</span>
-                  <span class="spec">packable</span>
+                  <span class="spec">quick-dry</span>
+                  <span class="spec">coupe nette</span>
                 </div>
               </div>
             </article>
@@ -913,9 +964,9 @@
               <div class="product-body">
                 <div class="product-line">
                   <span>Pack fondateur</span>
-                  <span class="price">179 EUR</span>
+                  <span class="price">149 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Top, casquette, bandana et kit anti-sueur.</p>
+                <p class="muted" style="margin-top:10px;">Visière, brassards, bandana et kit anti-sueur.</p>
                 <div class="specs">
                   <span class="spec">drop limité</span>
                   <span class="spec">premium</span>
@@ -932,20 +983,20 @@
           <div class="offer-panel">
             <div>
               <p class="eyebrow">Offre fondatrice</p>
-              <h2>Un premier drop simple, mais identifiable.</h2>
-              <p class="lead" style="margin-top:14px;">On ne vend pas une pile de produits. On vend une tenue solaire : protection, confort, statut, usage réel.</p>
+              <h2>Le drop doit devenir reconnaissable.</h2>
+              <p class="lead" style="margin-top:14px;">La visière et les brassards posent l'identité. Le reste complète l'usage : soleil, sueur, voyage, sport dehors.</p>
             </div>
             <div>
               <div class="offer-list">
-                <div class="offer-item"><span>Top UPF 50+</span><strong>95 EUR</strong></div>
-                <div class="offer-item"><span>Sixam Sun Cap</span><strong>55 EUR</strong></div>
+                <div class="offer-item"><span>Visière Sixam</span><strong>49 EUR</strong></div>
+                <div class="offer-item"><span>Brassards UV</span><strong>35 EUR</strong></div>
                 <div class="offer-item"><span>Bandana UV</span><strong>39 EUR</strong></div>
                 <div class="offer-item"><span>Sweat Control Kit</span><strong>35 EUR</strong></div>
               </div>
               <div class="total">
                 <div>
                   <p class="muted">Pack fondateur</p>
-                  <strong>179 EUR</strong>
+                  <strong>149 EUR</strong>
                 </div>
                 <a class="btn sun" href="#waitlist">Voir l'accès</a>
               </div>
