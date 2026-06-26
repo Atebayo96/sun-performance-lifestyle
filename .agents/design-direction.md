@@ -31,7 +31,7 @@ Updated competitive lesson:
 - Avoid crowded chips and badges above the fold.
 - Use large editorial typography, but keep the sentence clear.
 - Use a sunny premium palette instead of a black tech palette.
-- The brand should feel like sport outside: light, heat, courts, travel, club, clean silhouettes.
+- The brand should feel like sport outside: light, heat, courts, travel, clean silhouettes.
 - Product should feel like premium equipment, not cheap ecommerce cards.
 - Avoid long paragraphs on mobile.
 - Use short blocks: headline, one sentence, proof chips only where useful.
@@ -48,7 +48,7 @@ Updated competitive lesson:
    - One short product/drop note.
 
 2. Lifestyle:
-   - Club, effort, sun, weekend, travel.
+   - Effort, sun, weekend, travel.
    - Make visitors recognize the life they want to signal.
 
 3. Signs:
@@ -88,11 +88,11 @@ Use plain French.
 
 Good:
 
-- Sixam habille le mode de vie sport au soleil.
-- Le kit solaire des sportifs de club.
+- Plein soleil. Sans compromis.
+- Dehors, longtemps.
 - Jouer dehors. Rester net. Etre reconnu.
 - Moins de creme sur les bras, plus de tenue.
-- Les premiers objets du Club Solaire.
+- Les premieres pieces Sixam.
 - Entrer dans Sixam commence par le kit.
 - Des vêtements anti-UV premium pour les sports au soleil.
 - Protection solaire, tissu respirant, coupe soignée.

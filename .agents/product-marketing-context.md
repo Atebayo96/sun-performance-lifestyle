@@ -31,7 +31,7 @@ Primary persona:
 - 28-45 years old.
 - High disposable income.
 - Urban or peri-urban, active social life.
-- Sports au soleil, tennis, padel, running, HYROX prep, CrossFit, club sport and sunny travel.
+- Sports au soleil, tennis, padel, running, HYROX prep, CrossFit, outdoor training and sunny travel.
 - Buys premium brands like On, Hoka, Lululemon, Vuori, Alo, Nike premium.
 - Believes higher price often signals better quality.
 - Wants to look athletic, disciplined and premium, even if not a pro athlete.
@@ -55,8 +55,8 @@ Sixam combines:
 1. Anti-UV protection.
 2. Sweat management.
 3. Premium fit and status.
-4. Sport-social use cases: sports au soleil, club sport, training, running and sunny travel.
-5. Lifestyle belonging: club, effort, travel, sun, visible discipline.
+4. Sport-social use cases: sports au soleil, outdoor training, running and sunny travel.
+5. Lifestyle belonging: effort, travel, sun, visible discipline.
 
 Competitive inspiration:
 
@@ -97,8 +97,8 @@ The offer should feel premium. Do not race to low pricing.
 
 ## Messaging hierarchy
 
-1. Lifestyle promise: Sixam habille le mode de vie sport au soleil.
-2. Brand identity: club solaire, visible discipline, premium active life.
+1. Lifestyle promise: plein soleil, sans compromis.
+2. Brand identity: visible discipline, premium active life, sport outside.
 3. Product signatures: visiere, brassards, bandana, sweat accessories, then apparel.
 4. Offer: the founding kit as an entry point into the lifestyle.
 5. Access: founder waitlist.
@@ -120,7 +120,7 @@ The offer should feel premium. Do not race to low pricing.
 - First visible product signals should be Sixam-branded accessories: visiere first, brassards second.
 - Never present products as isolated gadgets. Each product is a visible sign of the Sixam lifestyle.
 - The site must sell belonging first, product utility second.
-- Use lifestyle language: Club Solaire, uniform, kit, first circle, sport dehors, voyage actif, rester net, arriver equipe.
+- Use lifestyle language: plein soleil, kit, sport dehors, voyage actif, rester net, arriver equipe.
 - Use Reddit/VOC concreteness: creme qui coule dans les yeux, moins de creme sur les bras, pas de coton trempe, leger, respirant, quick-dry.
 - Avoid abstract manifesto lines. A good line should describe a recognizable situation.
 - Do not overpromise that textile products replace sunscreen. Frame them as a cleaner, more practical routine around sun exposure.

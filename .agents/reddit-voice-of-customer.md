@@ -43,7 +43,7 @@ Copy implication:
 
 ### 4. The social job matters
 
-Users do not always say "status", but the underlying desire is to look put-together while doing active outdoor sport. Sixam should translate that into club, kit, routine and visible signals.
+Users do not always say "status", but the underlying desire is to look put-together while doing active outdoor sport. Sixam should translate that into kit, routine and visible signals.
 
 Copy implication:
 
@@ -52,7 +52,8 @@ Copy implication:
 
 ## Copy lines to test
 
-- Le kit solaire des sportifs de club.
+- Plein soleil. Sans compromis.
+- Dehors, longtemps.
 - Jouer dehors. Rester net. Etre reconnu.
 - Des pieces visibles pour jouer dehors, eviter la creme qui coule, gerer la sueur et rester propre pendant la session comme apres.
 - Moins de creme sur les bras, plus de tenue.
