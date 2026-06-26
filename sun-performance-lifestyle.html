@@ -3,28 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UV/01 - Anti-UV performance pour sportifs au soleil</title>
-  <meta name="description" content="Store mobile-first pour une marque anti-UV performance : vêtements et accessoires UPF pour padel, training, running et sport sous le soleil.">
+  <title>UV/01 - L'uniforme solaire des sportifs sociaux</title>
+  <meta name="description" content="UV/01 construit l'uniforme anti-UV premium pour padel, training, running et vies actives au soleil.">
   <style>
     :root {
-      --bg: #070908;
-      --panel: #101412;
-      --panel-2: #f4f1e8;
-      --ink: #f8f7f1;
-      --dark: #111511;
-      --muted: rgba(248, 247, 241, .68);
-      --muted-dark: #5c625b;
-      --line: rgba(248, 247, 241, .16);
-      --line-dark: rgba(17, 21, 17, .14);
-      --uv: #d7ff42;
-      --sun: #ffbd4a;
-      --aqua: #76e4ff;
-      --court: #3bd18b;
-      --clay: #ff6a45;
-      --white: #ffffff;
-      --shadow: 0 24px 70px rgba(0, 0, 0, .34);
-      --radius: 8px;
-      --max: 1160px;
+      --night: #050706;
+      --ink: #f7f4eb;
+      --muted: rgba(247, 244, 235, .68);
+      --muted-2: rgba(247, 244, 235, .48);
+      --line: rgba(247, 244, 235, .16);
+      --glass: rgba(247, 244, 235, .07);
+      --acid: #d9ff2f;
+      --sun: #ffb340;
+      --clay: #ef6144;
+      --court: #2fd17f;
+      --sand: #ebe4d2;
+      --black: #111410;
+      --max: 1180px;
+      --r: 8px;
+      --shadow: 0 28px 90px rgba(0, 0, 0, .38);
     }
 
     * {
@@ -37,10 +34,10 @@
 
     body {
       margin: 0;
+      background: var(--night);
       color: var(--ink);
-      background: var(--bg);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.45;
+      line-height: 1.42;
     }
 
     body::before {
@@ -49,10 +46,9 @@
       inset: 0;
       pointer-events: none;
       background:
-        linear-gradient(rgba(255, 255, 255, .035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, .026) 1px, transparent 1px);
-      background-size: 42px 42px;
-      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .08));
+        linear-gradient(90deg, rgba(217, 255, 47, .08), transparent 18%, transparent 82%, rgba(239, 97, 68, .08)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.028) 0 1px, transparent 1px 64px);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.08));
       z-index: 0;
     }
 
@@ -66,17 +62,26 @@
       width: 100%;
     }
 
-    .shell {
+    p,
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+    }
+
+    .page {
       position: relative;
       z-index: 1;
     }
 
     .nav {
-      position: sticky;
+      position: fixed;
       top: 0;
-      z-index: 10;
-      border-bottom: 1px solid var(--line);
-      background: rgba(7, 9, 8, .82);
+      left: 0;
+      right: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(247, 244, 235, .12);
+      background: rgba(5, 7, 6, .74);
       backdrop-filter: blur(18px);
     }
 
@@ -94,240 +99,224 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      font-weight: 900;
+      font-weight: 950;
       letter-spacing: 0;
-      white-space: nowrap;
     }
 
-    .logo-mark {
-      width: 34px;
-      height: 34px;
+    .logo-badge {
+      width: 36px;
+      height: 36px;
       display: grid;
       place-items: center;
-      border: 1px solid rgba(215, 255, 66, .8);
+      border: 1px solid rgba(217, 255, 47, .8);
       border-radius: 50%;
-      color: var(--uv);
-      box-shadow: 0 0 28px rgba(215, 255, 66, .24), inset 0 0 18px rgba(215, 255, 66, .12);
+      color: var(--acid);
+      box-shadow: 0 0 34px rgba(217, 255, 47, .22);
       font-size: 12px;
     }
 
     .nav-links {
       display: none;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
+      color: var(--muted);
+      font-weight: 800;
     }
 
     .nav-links a {
-      padding: 9px 10px;
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 700;
+      padding: 8px 10px;
       border-radius: 6px;
     }
 
     .nav-links a:hover {
-      background: rgba(255, 255, 255, .07);
+      background: var(--glass);
       color: var(--ink);
     }
 
-    .nav-cta {
-      min-height: 38px;
+    .nav-cta,
+    .btn {
+      min-height: 44px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0 12px;
-      border-radius: 6px;
-      background: var(--uv);
-      color: #151800;
-      font-size: 14px;
-      font-weight: 900;
+      border-radius: 7px;
+      border: 1px solid transparent;
+      font-weight: 950;
+      letter-spacing: 0;
       white-space: nowrap;
     }
 
+    .nav-cta {
+      padding: 0 13px;
+      background: var(--acid);
+      color: #151900;
+      font-size: 14px;
+    }
+
     .hero {
-      min-height: calc(100svh - 62px);
+      min-height: 100svh;
       display: grid;
       align-items: end;
-      overflow: hidden;
       position: relative;
+      overflow: hidden;
       border-bottom: 1px solid var(--line);
       background:
-        linear-gradient(180deg, rgba(7, 9, 8, .18), rgba(7, 9, 8, .94) 84%),
-        linear-gradient(90deg, rgba(7, 9, 8, .92), rgba(7, 9, 8, .18) 62%),
-        url("https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1800&q=86") center/cover;
+        linear-gradient(180deg, rgba(5,7,6,.2), rgba(5,7,6,.9) 72%, var(--night)),
+        linear-gradient(90deg, rgba(5,7,6,.92), rgba(5,7,6,.24) 54%, rgba(5,7,6,.78)),
+        url("https://images.pexels.com/photos/342361/pexels-photo-342361.jpeg?auto=compress&cs=tinysrgb&w=1800") center/cover;
     }
 
     .hero::after {
-      content: "";
+      content: "COURT / CLUB / COAST";
       position: absolute;
-      right: -180px;
-      bottom: -160px;
-      width: 520px;
-      height: 520px;
-      border: 1px solid rgba(215, 255, 66, .28);
-      border-radius: 50%;
-      box-shadow: inset 0 0 80px rgba(215, 255, 66, .08), 0 0 90px rgba(118, 228, 255, .1);
+      right: -8px;
+      top: 84px;
+      writing-mode: vertical-rl;
+      color: rgba(247,244,235,.16);
+      font-weight: 950;
+      letter-spacing: 0;
+      font-size: 13px;
     }
 
-    .hero-inner {
+    .hero-grid {
       width: min(var(--max), calc(100% - 28px));
       margin: 0 auto;
-      padding: 72px 0 34px;
+      padding: 104px 0 24px;
+      display: grid;
+      gap: 22px;
       position: relative;
       z-index: 1;
     }
 
-    .badge {
+    .preline {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      min-height: 30px;
-      padding: 0 10px;
-      border: 1px solid rgba(215, 255, 66, .48);
+      gap: 9px;
+      width: fit-content;
+      padding: 8px 10px;
+      border: 1px solid rgba(217, 255, 47, .36);
       border-radius: 999px;
-      background: rgba(215, 255, 66, .1);
-      color: var(--uv);
+      background: rgba(217, 255, 47, .08);
+      color: var(--acid);
       font-size: 12px;
-      font-weight: 900;
+      font-weight: 950;
       text-transform: uppercase;
-      letter-spacing: 0;
     }
 
-    .badge::before {
+    .preline::before {
       content: "";
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: var(--uv);
-      box-shadow: 0 0 18px var(--uv);
-    }
-
-    h1,
-    h2,
-    h3,
-    p {
-      margin: 0;
+      background: var(--acid);
+      box-shadow: 0 0 18px var(--acid);
     }
 
     h1 {
-      max-width: 780px;
-      margin-top: 18px;
-      font-size: clamp(42px, 13vw, 108px);
-      line-height: .9;
+      max-width: 920px;
+      font-size: clamp(48px, 14vw, 108px);
+      line-height: .84;
       letter-spacing: 0;
     }
 
-    .hero-lead {
-      max-width: 680px;
-      margin-top: 18px;
-      color: rgba(248, 247, 241, .82);
+    .hero-copy {
+      max-width: 620px;
+      color: rgba(247, 244, 235, .82);
       font-size: clamp(17px, 4.8vw, 24px);
     }
 
     .hero-actions {
       display: grid;
-      grid-template-columns: 1fr;
       gap: 10px;
-      margin-top: 24px;
-      max-width: 460px;
+      max-width: 520px;
     }
 
     .btn {
-      min-height: 52px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+      min-height: 54px;
       padding: 0 18px;
-      border-radius: 7px;
-      border: 1px solid transparent;
-      font-weight: 900;
-      letter-spacing: 0;
-      cursor: pointer;
     }
 
     .btn.primary {
-      background: var(--uv);
-      color: #161900;
-      box-shadow: 0 16px 44px rgba(215, 255, 66, .22);
+      background: var(--acid);
+      color: #151900;
+      box-shadow: 0 18px 44px rgba(217, 255, 47, .2);
     }
 
     .btn.secondary {
-      background: rgba(255, 255, 255, .08);
+      background: rgba(247, 244, 235, .08);
       color: var(--ink);
-      border-color: rgba(255, 255, 255, .2);
+      border-color: rgba(247, 244, 235, .2);
+      backdrop-filter: blur(14px);
     }
 
-    .hero-proof {
+    .identity-strip {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 8px;
-      margin-top: 24px;
-      max-width: 600px;
+      margin-top: 4px;
     }
 
-    .proof-chip {
-      min-height: 76px;
+    .identity-chip {
       padding: 12px;
-      border: 1px solid rgba(255, 255, 255, .14);
-      border-radius: var(--radius);
-      background: rgba(255, 255, 255, .07);
-      backdrop-filter: blur(10px);
+      border: 1px solid rgba(247, 244, 235, .16);
+      border-radius: var(--r);
+      background: rgba(247, 244, 235, .07);
+      backdrop-filter: blur(14px);
+      min-height: 78px;
     }
 
-    .proof-chip strong {
+    .identity-chip strong {
       display: block;
-      color: var(--white);
-      font-size: 18px;
-      line-height: 1;
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.05;
     }
 
-    .proof-chip span {
+    .identity-chip span {
       display: block;
-      margin-top: 6px;
-      color: var(--muted);
+      margin-top: 7px;
+      color: var(--muted-2);
       font-size: 12px;
-      font-weight: 700;
+      font-weight: 800;
     }
 
-    .mobile-product {
-      margin-top: 26px;
-      border: 1px solid rgba(255, 255, 255, .17);
-      border-radius: var(--radius);
-      background: rgba(7, 9, 8, .58);
+    .hero-product {
+      border: 1px solid rgba(247, 244, 235, .18);
+      border-radius: var(--r);
+      background: rgba(5, 7, 6, .68);
       box-shadow: var(--shadow);
       overflow: hidden;
+      backdrop-filter: blur(16px);
     }
 
-    .mobile-product img {
-      height: 220px;
+    .hero-product-img {
+      height: 248px;
       object-fit: cover;
-      filter: saturate(1.08) contrast(1.05);
+      filter: saturate(1.04) contrast(1.04);
     }
 
-    .mobile-product-body {
+    .hero-product-body {
       padding: 16px;
-      display: grid;
-      gap: 10px;
     }
 
-    .price-row {
+    .product-line {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 12px;
-      font-weight: 900;
+      align-items: start;
+      gap: 14px;
+      font-weight: 950;
+      font-size: 20px;
+      line-height: 1.05;
+    }
+
+    .price {
+      color: var(--acid);
+      white-space: nowrap;
     }
 
     section {
       padding: 58px 0;
       border-bottom: 1px solid var(--line);
-    }
-
-    .light {
-      background: var(--panel-2);
-      color: var(--dark);
-      border-bottom-color: var(--line-dark);
     }
 
     .wrap {
@@ -342,547 +331,473 @@
     }
 
     .eyebrow {
-      color: var(--uv);
+      color: var(--acid);
       font-size: 12px;
       font-weight: 950;
       text-transform: uppercase;
-      letter-spacing: 0;
-    }
-
-    .light .eyebrow {
-      color: #245f43;
     }
 
     h2 {
-      max-width: 850px;
-      font-size: clamp(31px, 9vw, 62px);
-      line-height: .98;
+      max-width: 920px;
+      font-size: clamp(34px, 10vw, 72px);
+      line-height: .9;
       letter-spacing: 0;
     }
 
     .lead {
-      max-width: 680px;
+      max-width: 720px;
       color: var(--muted);
-      font-size: 17px;
+      font-size: 18px;
     }
 
-    .light .lead,
-    .light .muted {
-      color: var(--muted-dark);
-    }
-
-    .grid {
+    .manifesto {
       display: grid;
       gap: 14px;
     }
 
-    .cards-3,
-    .cards-4,
-    .cards-2 {
-      grid-template-columns: 1fr;
-    }
-
-    .card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(255, 255, 255, .055);
+    .statement {
+      min-height: 170px;
       padding: 18px;
-      overflow: hidden;
-    }
-
-    .light .card {
-      background: rgba(255, 255, 255, .66);
-      border-color: var(--line-dark);
-      box-shadow: 0 12px 34px rgba(17, 21, 17, .06);
-    }
-
-    .benefit {
-      min-height: 210px;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      background: var(--glass);
       display: grid;
       align-content: space-between;
     }
 
-    .icon {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: rgba(215, 255, 66, .1);
-      border: 1px solid rgba(215, 255, 66, .34);
-      color: var(--uv);
-      font-weight: 950;
-      margin-bottom: 34px;
+    .statement span {
+      color: var(--muted-2);
+      font-weight: 900;
+      font-size: 12px;
     }
 
-    .light .icon {
-      color: #161900;
-      background: var(--uv);
-      border-color: rgba(17, 21, 17, .14);
-    }
-
-    h3 {
-      font-size: 22px;
-      line-height: 1.08;
+    .statement strong {
+      display: block;
+      margin-top: 34px;
+      font-size: clamp(25px, 7vw, 40px);
+      line-height: .96;
       letter-spacing: 0;
+    }
+
+    .lifestyle {
+      background: var(--sand);
+      color: var(--black);
+      border-bottom-color: rgba(17, 20, 16, .14);
+    }
+
+    .lifestyle .eyebrow {
+      color: #2b6849;
+    }
+
+    .lifestyle .lead,
+    .lifestyle .muted {
+      color: #5f6257;
+    }
+
+    .scene-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .scene {
+      min-height: 390px;
+      border-radius: var(--r);
+      overflow: hidden;
+      position: relative;
+      display: grid;
+      align-items: end;
+      padding: 16px;
+      background: #111;
+      box-shadow: 0 18px 42px rgba(17, 20, 16, .14);
+    }
+
+    .scene::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.78));
+      z-index: 1;
+    }
+
+    .scene.one {
+      background: url("https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=1200") center/cover;
+    }
+
+    .scene.two {
+      background: url("https://images.pexels.com/photos/23379597/pexels-photo-23379597.jpeg?auto=compress&cs=tinysrgb&w=1200") center/cover;
+    }
+
+    .scene.three {
+      background: url("https://images.pexels.com/photos/3764538/pexels-photo-3764538.jpeg?auto=compress&cs=tinysrgb&w=1200") center/cover;
+    }
+
+    .scene-content {
+      position: relative;
+      z-index: 2;
+      color: var(--ink);
+    }
+
+    .scene-content h3 {
+      font-size: 30px;
+      line-height: .95;
+      margin-bottom: 8px;
+    }
+
+    .scene-content p {
+      color: rgba(247,244,235,.74);
+      font-weight: 700;
+    }
+
+    .drop-layout {
+      display: grid;
+      gap: 14px;
+    }
+
+    .product {
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      background: rgba(247, 244, 235, .06);
+      overflow: hidden;
+    }
+
+    .product img {
+      height: 320px;
+      object-fit: cover;
+      filter: saturate(1.04) contrast(1.04);
+    }
+
+    .product-body {
+      padding: 17px;
     }
 
     .muted {
       color: var(--muted);
     }
 
-    .product-grid {
-      display: grid;
-      gap: 14px;
-    }
-
-    .product {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-
-    .product-media {
-      position: relative;
-      background: #171a16;
-    }
-
-    .product-media img {
-      height: 310px;
-      object-fit: cover;
-      filter: saturate(1.06) contrast(1.04);
-    }
-
-    .product-label {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      min-height: 28px;
-      display: inline-flex;
-      align-items: center;
-      padding: 0 9px;
-      border-radius: 999px;
-      background: rgba(7, 9, 8, .72);
-      border: 1px solid rgba(255, 255, 255, .18);
-      color: var(--uv);
-      font-size: 12px;
-      font-weight: 900;
-      backdrop-filter: blur(12px);
-    }
-
-    .product-body {
-      padding: 16px;
-    }
-
-    .product-title {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
-
-    .product-title strong {
-      font-size: 21px;
-      line-height: 1.05;
-    }
-
-    .product-title span {
-      color: var(--uv);
-      font-weight: 950;
-      white-space: nowrap;
-    }
-
-    .specs {
+    .tags {
       display: flex;
       flex-wrap: wrap;
       gap: 7px;
-      margin: 16px 0;
+      margin: 15px 0;
     }
 
-    .spec {
+    .tag {
       min-height: 28px;
       display: inline-flex;
       align-items: center;
       padding: 0 9px;
+      border: 1px solid rgba(247,244,235,.16);
       border-radius: 999px;
-      background: rgba(255, 255, 255, .07);
-      border: 1px solid rgba(255, 255, 255, .13);
-      color: rgba(248, 247, 241, .72);
+      color: rgba(247,244,235,.72);
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 850;
     }
 
     .product .btn {
       width: 100%;
-      min-height: 48px;
     }
 
-    .split {
-      display: grid;
-      gap: 18px;
-    }
-
-    .visual-panel {
-      min-height: 420px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      overflow: hidden;
+    .conversion {
       background:
-        linear-gradient(180deg, rgba(7, 9, 8, .08), rgba(7, 9, 8, .78)),
-        url("https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1400&q=86") center/cover;
-      display: grid;
-      align-items: end;
-      padding: 18px;
+        linear-gradient(180deg, rgba(5,7,6,.18), rgba(5,7,6,.94)),
+        url("https://images.pexels.com/photos/175658/pexels-photo-175658.jpeg?auto=compress&cs=tinysrgb&w=1800") center/cover;
     }
 
-    .stat-stack {
-      display: grid;
-      gap: 12px;
-    }
-
-    .stat {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 14px;
-      align-items: center;
-      padding: 16px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(255, 255, 255, .055);
-    }
-
-    .stat strong {
-      color: var(--uv);
-      font-size: 32px;
-      line-height: 1;
-    }
-
-    .awareness {
+    .argument {
       display: grid;
       gap: 10px;
     }
 
-    .awareness-step {
+    .argument-card {
       padding: 16px;
-      border-radius: var(--radius);
-      background: var(--white);
-      border: 1px solid var(--line-dark);
-      display: grid;
-      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      background: rgba(5, 7, 6, .72);
+      backdrop-filter: blur(14px);
     }
 
-    .awareness-step span {
-      color: #245f43;
+    .argument-card span {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--acid);
       font-size: 12px;
       font-weight: 950;
       text-transform: uppercase;
     }
 
     .bundle {
-      display: grid;
-      gap: 18px;
-      border: 1px solid rgba(215, 255, 66, .36);
-      border-radius: var(--radius);
+      border: 1px solid rgba(217, 255, 47, .34);
+      border-radius: var(--r);
       background:
-        linear-gradient(135deg, rgba(215, 255, 66, .14), rgba(118, 228, 255, .08)),
-        rgba(255, 255, 255, .05);
+        linear-gradient(135deg, rgba(217,255,47,.16), rgba(239,97,68,.08)),
+        rgba(247,244,235,.05);
       padding: 18px;
       box-shadow: var(--shadow);
+      display: grid;
+      gap: 18px;
     }
 
-    .bundle-list {
+    .bundle-items {
       display: grid;
       gap: 8px;
-      margin-top: 16px;
     }
 
     .bundle-item {
       display: flex;
-      align-items: center;
       justify-content: space-between;
       gap: 12px;
       padding: 12px;
-      border: 1px solid rgba(255, 255, 255, .14);
+      border: 1px solid rgba(247,244,235,.14);
       border-radius: 7px;
-      background: rgba(0, 0, 0, .18);
-      color: rgba(248, 247, 241, .76);
-      font-weight: 800;
-    }
-
-    .bundle-price {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 16px;
-      margin-top: 18px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255, 255, 255, .18);
-    }
-
-    .bundle-price strong {
-      font-size: 42px;
-      line-height: .9;
-      color: var(--uv);
-    }
-
-    .faq {
-      display: grid;
-      gap: 10px;
-    }
-
-    details {
-      border: 1px solid var(--line-dark);
-      border-radius: var(--radius);
-      background: rgba(255, 255, 255, .72);
-      padding: 16px;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 900;
-      list-style: none;
-    }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details p {
-      margin-top: 10px;
-      color: var(--muted-dark);
+      background: rgba(0,0,0,.18);
+      color: rgba(247,244,235,.75);
+      font-weight: 850;
     }
 
     .waitlist {
       display: grid;
-      gap: 14px;
-      max-width: 620px;
+      gap: 18px;
+      max-width: 700px;
     }
 
     .form {
       display: grid;
       gap: 10px;
-      margin-top: 18px;
     }
 
     input {
-      min-height: 54px;
       width: 100%;
-      border: 1px solid rgba(255, 255, 255, .18);
+      min-height: 56px;
+      border: 1px solid rgba(247,244,235,.18);
       border-radius: 7px;
-      background: rgba(255, 255, 255, .08);
+      background: rgba(247,244,235,.08);
       color: var(--ink);
       padding: 0 14px;
       font: inherit;
-      font-weight: 700;
+      font-weight: 800;
       outline: none;
     }
 
     input::placeholder {
-      color: rgba(248, 247, 241, .48);
+      color: rgba(247,244,235,.46);
     }
 
     .fine {
-      color: rgba(248, 247, 241, .52);
+      color: var(--muted-2);
       font-size: 12px;
     }
 
-    .footer {
-      padding: 34px 0 96px;
-      color: rgba(248, 247, 241, .56);
-    }
-
-    .sticky-mobile {
+    .sticky {
       position: fixed;
-      z-index: 12;
+      z-index: 30;
       left: 14px;
       right: 14px;
       bottom: 14px;
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 10px;
+      align-items: center;
       padding: 10px;
-      border: 1px solid rgba(255, 255, 255, .18);
-      border-radius: 8px;
-      background: rgba(7, 9, 8, .86);
+      border: 1px solid rgba(247,244,235,.18);
+      border-radius: var(--r);
+      background: rgba(5,7,6,.86);
       backdrop-filter: blur(16px);
       box-shadow: var(--shadow);
     }
 
-    .sticky-mobile span {
-      align-self: center;
-      color: rgba(248, 247, 241, .74);
+    .sticky span {
+      color: rgba(247,244,235,.76);
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 850;
     }
 
-    .sticky-mobile .btn {
+    .sticky .btn {
       min-height: 42px;
       padding: 0 12px;
       font-size: 13px;
     }
 
-    @media (min-width: 720px) {
+    footer {
+      padding: 38px 0 100px;
+      color: var(--muted-2);
+    }
+
+    @media (min-width: 760px) {
       .nav-links {
         display: flex;
+      }
+
+      .hero-grid {
+        min-height: 100svh;
+        grid-template-columns: minmax(0, 1fr) 380px;
+        align-items: end;
+        padding-bottom: 62px;
+      }
+
+      .hero-main {
+        grid-column: 1;
+      }
+
+      .hero-product {
+        grid-column: 2;
       }
 
       .hero-actions {
         grid-template-columns: auto auto;
       }
 
-      .mobile-product {
-        max-width: 410px;
-      }
-
-      .cards-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .cards-3 {
+      .manifesto {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
-      .cards-4 {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+      .scene-grid {
+        grid-template-columns: 1.2fr .9fr .9fr;
       }
 
-      .product-grid {
+      .drop-layout {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
-      .split {
-        grid-template-columns: minmax(0, 1fr) minmax(320px, 480px);
+      .conversion-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 430px;
+        gap: 28px;
         align-items: center;
       }
 
       .bundle {
-        grid-template-columns: 1fr minmax(300px, 430px);
+        grid-template-columns: minmax(0, 1fr) 420px;
         align-items: center;
-        padding: 26px;
+        padding: 28px;
       }
 
       .form {
         grid-template-columns: 1fr auto;
       }
 
-      .sticky-mobile {
+      .sticky {
         display: none;
       }
 
       section {
-        padding: 82px 0;
-      }
-    }
-
-    @media (min-width: 1040px) {
-      .hero-inner {
-        padding-bottom: 70px;
+        padding: 86px 0;
       }
 
-      .mobile-product {
-        position: absolute;
-        right: 0;
-        bottom: 64px;
-        width: 360px;
-        margin-top: 0;
-      }
-
-      .hero-lead,
-      .hero-actions,
-      .hero-proof {
-        margin-right: 410px;
+      footer {
+        padding-bottom: 44px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="shell">
+  <div class="page">
     <header class="nav">
       <div class="nav-inner">
         <a class="logo" href="#top" aria-label="UV/01 accueil">
-          <span class="logo-mark">UV</span>
+          <span class="logo-badge">UV</span>
           <span>UV/01</span>
         </a>
         <nav class="nav-links" aria-label="Navigation">
-          <a href="#solution">Solution</a>
+          <a href="#manifesto">Identite</a>
+          <a href="#scenes">Lifestyle</a>
           <a href="#drop">Drop</a>
-          <a href="#uv">Pourquoi UV</a>
-          <a href="#faq">FAQ</a>
+          <a href="#waitlist">Beta</a>
         </nav>
-        <a class="nav-cta" href="#waitlist">Acces prioritaire</a>
+        <a class="nav-cta" href="#waitlist">Entrer dans le club</a>
       </div>
     </header>
 
     <main>
       <section class="hero" id="top">
-        <div class="hero-inner">
-          <div class="badge">UPF 50+ en test terrain</div>
-          <h1>Anti-UV pour sportifs au soleil.</h1>
-          <p class="hero-lead">Des pieces techniques pour rester protege, sec et presentable quand tu joues, transpires et bouges dehors. Padel, running, training, voyage soleil.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#drop">Voir le drop</a>
-            <a class="btn secondary" href="#uv">Pourquoi anti-UV</a>
-          </div>
-
-          <div class="hero-proof" aria-label="Preuves produit">
-            <div class="proof-chip">
-              <strong>UPF 50+</strong>
-              <span>objectif tissu certifie</span>
+        <div class="hero-grid">
+          <div class="hero-main">
+            <div class="preline">Uniforme solaire / beta drop</div>
+            <h1>La peau protegee. Le statut visible.</h1>
+            <p class="hero-copy">UV/01 construit l'uniforme des gens qui jouent au padel, courent, s'entrainent, partent au soleil et veulent rester nets. Pas rando. Pas medical. Pas gymbro.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#waitlist">Rejoindre le beta drop</a>
+              <a class="btn secondary" href="#manifesto">Comprendre le monde</a>
             </div>
-            <div class="proof-chip">
-              <strong>Quick-dry</strong>
-              <span>moins de tee trempe</span>
-            </div>
-            <div class="proof-chip">
-              <strong>Club fit</strong>
-              <span>sport + apres-match</span>
-            </div>
-          </div>
-
-          <article class="mobile-product" aria-label="Produit phare">
-            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=900&q=84" alt="Sportif en entrainement portant un haut technique">
-            <div class="mobile-product-body">
-              <div class="price-row">
-                <strong>Long sleeve solaire</strong>
-                <span>79 EUR</span>
+            <div class="identity-strip">
+              <div class="identity-chip">
+                <strong>Court</strong>
+                <span>padel, tennis, club</span>
               </div>
-              <p class="muted">Le top hero : protection UV, respirabilite, coupe propre. Disponible en beta drop.</p>
+              <div class="identity-chip">
+                <strong>Heat</strong>
+                <span>soleil, sueur, effort</span>
+              </div>
+              <div class="identity-chip">
+                <strong>Status</strong>
+                <span>sportif, propre, premium</span>
+              </div>
+            </div>
+          </div>
+
+          <article class="hero-product" aria-label="Produit hero">
+            <img class="hero-product-img" src="https://images.pexels.com/photos/31559342/pexels-photo-31559342.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Joueur de tennis en tenue premium">
+            <div class="hero-product-body">
+              <div class="product-line">
+                <span>Long sleeve solaire</span>
+                <span class="price">79 EUR</span>
+              </div>
+              <p class="muted" style="margin-top: 10px;">Le top UPF qui remplace le tee coton quand tu veux rester protege et presentable.</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="light" id="solution">
+      <section id="manifesto">
         <div class="wrap">
           <div class="section-head">
-            <p class="eyebrow">La solution d'abord</p>
-            <h2>La tenue qui remplace ton t-shirt normal quand le soleil tape.</h2>
-            <p class="lead">Pas besoin d'etre athlete pro. La cible, c'est aussi ceux qui veulent avoir l'air sportifs, propres et equipes, sans porter du matos de randonnee ou un tee coton qui colle apres 20 minutes.</p>
+            <p class="eyebrow">Identite de marque</p>
+            <h2>Les gens n'achetent pas un tissu. Ils achetent le signal.</h2>
+            <p class="lead">Le signal : je fais attention a mon corps, je m'entraine, je sors, je voyage, je suis equipe. L'anti-UV vient ensuite comme preuve intelligente.</p>
           </div>
 
-          <div class="grid cards-3">
-            <article class="card benefit">
-              <div>
-                <div class="icon">UV</div>
-                <h3>Protection sans look medical</h3>
-              </div>
-              <p class="muted">UPF comme preuve rationnelle. Style comme raison d'achat.</p>
+          <div class="manifesto">
+            <article class="statement">
+              <span>01 / Discipline</span>
+              <strong>Tu t'entraines meme quand il fait chaud.</strong>
             </article>
-            <article class="card benefit">
-              <div>
-                <div class="icon">DRY</div>
-                <h3>Moins trempe, moins sloppy</h3>
-              </div>
-              <p class="muted">Pieces quick-dry pensees pour chaleur, transpiration et apres-sport.</p>
+            <article class="statement">
+              <span>02 / Presence</span>
+              <strong>Tu arrives au club deja dans le bon uniforme.</strong>
             </article>
-            <article class="card benefit">
-              <div>
-                <div class="icon">FIT</div>
-                <h3>Sportif, pas gymbro</h3>
+            <article class="statement">
+              <span>03 / Controle</span>
+              <strong>Tu transpires, mais tu ne finis pas sloppy.</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lifestyle" id="scenes">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Le monde UV/01</p>
+            <h2>Sport social. Soleil fort. Tenue nette.</h2>
+            <p class="lead">La marque doit vivre dans des moments reconnaissables : le match apres le travail, le training avant de sortir, le week-end au soleil, la terrasse apres l'effort.</p>
+          </div>
+
+          <div class="scene-grid">
+            <article class="scene one">
+              <div class="scene-content">
+                <h3>Court</h3>
+                <p>Padel, tennis, match dehors, club a 19h.</p>
               </div>
-              <p class="muted">Coupes nettes pour padel, club, running, terrasse, voyage.</p>
+            </article>
+            <article class="scene two">
+              <div class="scene-content">
+                <h3>Body</h3>
+                <p>Training, sueur, coupe qui reste propre.</p>
+              </div>
+            </article>
+            <article class="scene three">
+              <div class="scene-content">
+                <h3>Coast</h3>
+                <p>Voyage soleil, running, beach workout.</p>
+              </div>
             </article>
           </div>
         </div>
@@ -891,112 +806,89 @@
       <section id="drop">
         <div class="wrap">
           <div class="section-head">
-            <p class="eyebrow">Produits phares</p>
-            <h2>Le premier drop : court, lisible, anti-UV.</h2>
-            <p class="lead">On ne lance pas 30 references. On lance les pieces qui prouvent le concept : soleil, sueur, style.</p>
+            <p class="eyebrow">Drop beta</p>
+            <h2>Pas une collection. Un uniforme.</h2>
+            <p class="lead">Trois pieces qui racontent le mode de vie en une silhouette : haut solaire, casquette, kit sueur. Les specs rassurent. L'identite fait acheter.</p>
           </div>
 
-          <div class="product-grid">
+          <div class="drop-layout">
             <article class="product">
-              <div class="product-media">
-                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=84" alt="Haut technique noir porte en exterieur">
-                <span class="product-label">Hero product</span>
-              </div>
+              <img src="https://images.pexels.com/photos/31559342/pexels-photo-31559342.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Long sleeve sportif premium sur court">
               <div class="product-body">
-                <div class="product-title">
-                  <strong>Long Sleeve UPF 50+</strong>
-                  <span>79 EUR</span>
+                <div class="product-line">
+                  <span>Long Sleeve UPF 50+</span>
+                  <span class="price">79 EUR</span>
                 </div>
-                <p class="muted">Pour padel outdoor, running chaud, training et voyage soleil.</p>
-                <div class="specs">
-                  <span class="spec">UPF 50+</span>
-                  <span class="spec">Quick-dry</span>
-                  <span class="spec">Anti-frottement</span>
+                <p class="muted" style="margin-top: 10px;">La piece hero. Pour jouer dehors sans finir en tee trempe ou look rando.</p>
+                <div class="tags">
+                  <span class="tag">UPF 50+ cible</span>
+                  <span class="tag">quick-dry</span>
+                  <span class="tag">club fit</span>
                 </div>
-                <a class="btn primary" href="#waitlist">Me prevenir</a>
+                <a class="btn primary" href="#waitlist">Je veux ce drop</a>
               </div>
             </article>
 
             <article class="product">
-              <div class="product-media">
-                <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=84" alt="Casquette premium au soleil">
-                <span class="product-label">Best add-on</span>
-              </div>
+              <img src="https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Joueuse sur court au soleil">
               <div class="product-body">
-                <div class="product-title">
-                  <strong>Casquette UV Tech</strong>
-                  <span>45 EUR</span>
+                <div class="product-line">
+                  <span>UV Club Cap</span>
+                  <span class="price">45 EUR</span>
                 </div>
-                <p class="muted">Legere, respirante, bande anti-sueur, protection visage.</p>
-                <div class="specs">
-                  <span class="spec">Legere</span>
-                  <span class="spec">Anti-sueur</span>
-                  <span class="spec">Club-ready</span>
+                <p class="muted" style="margin-top: 10px;">La piece visible. Elle signe l'appartenance avant meme le premier point.</p>
+                <div class="tags">
+                  <span class="tag">anti-sueur</span>
+                  <span class="tag">leger</span>
+                  <span class="tag">court ready</span>
                 </div>
-                <a class="btn primary" href="#waitlist">Me prevenir</a>
+                <a class="btn primary" href="#waitlist">Je veux ce drop</a>
               </div>
             </article>
 
             <article class="product">
-              <div class="product-media">
-                <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?auto=format&fit=crop&w=900&q=84" alt="Accessoires de sport et serviette">
-                <span class="product-label">Starter kit</span>
-              </div>
+              <img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Balle et court de tennis au soleil">
               <div class="product-body">
-                <div class="product-title">
-                  <strong>Sun Sweat Kit</strong>
-                  <span>119 EUR</span>
+                <div class="product-line">
+                  <span>Sun Sweat Kit</span>
+                  <span class="price">119 EUR</span>
                 </div>
-                <p class="muted">Long sleeve, casquette, bandeau et serviette compacte.</p>
-                <div class="specs">
-                  <span class="spec">Bundle</span>
-                  <span class="spec">Padel</span>
-                  <span class="spec">Voyage</span>
+                <p class="muted" style="margin-top: 10px;">Le pack qui transforme des accessoires en rituel : match, serviette, bandeau, soleil.</p>
+                <div class="tags">
+                  <span class="tag">bundle</span>
+                  <span class="tag">padel</span>
+                  <span class="tag">travel</span>
                 </div>
-                <a class="btn primary" href="#waitlist">Acces prioritaire</a>
+                <a class="btn primary" href="#waitlist">Entrer en beta</a>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="light" id="uv">
-        <div class="wrap">
-          <div class="split">
-            <div>
-              <p class="eyebrow">Pourquoi anti-UV</p>
-              <h2>En France, l'anti-UV sport est encore trop peu desire.</h2>
-              <p class="lead" style="margin-top: 16px;">Le marche connait la creme solaire. Il connait les vetements de sport. Mais il manque une marque qui rend la protection UV desirable pour les gens actifs, sociaux, sportifs ou aspirants sportifs.</p>
-              <div class="awareness" style="margin-top: 24px;">
-                <div class="awareness-step">
-                  <span>Solution aware</span>
-                  <strong>Tu veux une piece UPF belle et respirante.</strong>
-                  <p class="muted">On te donne le produit et les specs.</p>
-                </div>
-                <div class="awareness-step">
-                  <span>Problem aware</span>
-                  <strong>Tu transpires, tu crames, ton tee colle.</strong>
-                  <p class="muted">On montre pourquoi un t-shirt normal n'est pas fait pour ca.</p>
-                </div>
-                <div class="awareness-step">
-                  <span>Unaware</span>
-                  <strong>Tu pensais juste acheter une casquette.</strong>
-                  <p class="muted">On transforme l'achat en kit de sport sous soleil.</p>
-                </div>
-              </div>
-            </div>
-            <div class="visual-panel">
-              <div class="stat-stack">
-                <div class="stat">
-                  <strong>98%</strong>
-                  <p>Objectif blocage UV pour tissus UPF 50+ sur zones couvertes.</p>
-                </div>
-                <div class="stat">
-                  <strong>3</strong>
-                  <p>Moments couverts : match, training, apres-sport.</p>
-                </div>
-              </div>
-            </div>
+      <section class="conversion">
+        <div class="wrap conversion-grid">
+          <div>
+            <p class="eyebrow">Pour tous les niveaux d'awareness</p>
+            <h2>Tu viens pour le style. Tu restes pour la fonction.</h2>
+            <p class="lead" style="margin-top: 14px;">La page ne doit pas eduquer froidement. Elle doit chauffer : te faire voir la scene, te faire reconnaitre le personnage, puis justifier l'achat par l'anti-UV.</p>
+          </div>
+          <div class="argument">
+            <article class="argument-card">
+              <span>Unaware</span>
+              <h3>Tu veux juste avoir l'air plus sportif.</h3>
+              <p class="muted">UV/01 te donne l'uniforme social : court, club, soleil.</p>
+            </article>
+            <article class="argument-card">
+              <span>Problem aware</span>
+              <h3>Tu connais le tee qui colle et la peau qui chauffe.</h3>
+              <p class="muted">Le produit resout chaleur, sueur, UV et apres-sport.</p>
+            </article>
+            <article class="argument-card">
+              <span>Solution aware</span>
+              <h3>Tu cherches deja du UPF.</h3>
+              <p class="muted">On l'amene hors rando, hors medical, dans une silhouette premium.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -1005,52 +897,24 @@
         <div class="wrap">
           <div class="bundle">
             <div>
-              <p class="eyebrow">Pack recommande</p>
-              <h2>Le kit qui vend le mode de vie.</h2>
-              <p class="lead" style="margin-top: 14px;">Le produit seul vend une fonction. Le kit vend une scene : tu arrives equipe, tu joues, tu transpires, tu restes propre, tu continues ta journee.</p>
+              <p class="eyebrow">Pack fondateur</p>
+              <h2>Le kit qui vend le lifestyle.</h2>
+              <p class="lead" style="margin-top: 14px;">Le bon premier achat n'est pas un produit isole. C'est une panoplie courte qui rend le client identifiable.</p>
             </div>
             <div>
-              <div class="bundle-list">
+              <div class="bundle-items">
                 <div class="bundle-item"><span>Long Sleeve UPF 50+</span><strong>79 EUR</strong></div>
-                <div class="bundle-item"><span>Casquette UV Tech</span><strong>45 EUR</strong></div>
+                <div class="bundle-item"><span>UV Club Cap</span><strong>45 EUR</strong></div>
                 <div class="bundle-item"><span>Bandeau + serviette</span><strong>29 EUR</strong></div>
               </div>
-              <div class="bundle-price">
+              <div style="display:flex;align-items:end;justify-content:space-between;gap:14px;margin-top:18px;padding-top:18px;border-top:1px solid rgba(247,244,235,.16);">
                 <div>
-                  <p class="muted">Prix beta drop</p>
-                  <strong>119 EUR</strong>
+                  <p class="muted">Beta price</p>
+                  <strong style="font-size:42px;line-height:.9;color:var(--acid);">119 EUR</strong>
                 </div>
-                <a class="btn primary" href="#waitlist">Rejoindre la liste</a>
+                <a class="btn primary" href="#waitlist">Prendre ma place</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="light" id="faq">
-        <div class="wrap">
-          <div class="section-head">
-            <p class="eyebrow">Objections</p>
-            <h2>Les questions que les clients vont se poser.</h2>
-          </div>
-
-          <div class="faq">
-            <details open>
-              <summary>C'est quoi UPF 50+ ?</summary>
-              <p>UPF mesure la protection d'un tissu contre les UV. L'objectif produit est de sourcer des tissus UPF 50+ testes, puis de communiquer seulement les claims verifies par les fournisseurs et les rapports de test.</p>
-            </details>
-            <details>
-              <summary>Pourquoi pas juste mettre de la creme solaire ?</summary>
-              <p>La creme reste utile, mais elle demande reapplication et discipline. Le vetement couvre automatiquement les zones protegees, surtout pendant padel, running ou training en plein soleil.</p>
-            </details>
-            <details>
-              <summary>Est-ce que ca fait rando ou peche ?</summary>
-              <p>Non, c'est justement le probleme qu'on attaque : protection anti-UV avec une coupe plus sport social, plus club, plus urbaine.</p>
-            </details>
-            <details>
-              <summary>Les produits sont deja disponibles ?</summary>
-              <p>Le store presente le drop cible. La phase actuelle est beta / acces prioritaire : sourcing, echantillons, tests terrain, puis premier drop court.</p>
-            </details>
           </div>
         </div>
       </section>
@@ -1058,29 +922,29 @@
       <section id="waitlist">
         <div class="wrap">
           <div class="waitlist">
-            <p class="eyebrow">Acces prioritaire</p>
-            <h2>Entre dans le beta drop.</h2>
-            <p class="lead">Rejoins la liste pour recevoir le premier drop anti-UV sport : long sleeve, casquette, bandeau et kit soleil. Aucun paiement maintenant.</p>
+            <p class="eyebrow">Beta club</p>
+            <h2>Rejoins les premiers porteurs.</h2>
+            <p class="lead">Aucun paiement maintenant. Tu entres dans la liste pour recevoir le drop, les tests terrain, les premieres couleurs et l'acces fondateur.</p>
             <form class="form" action="mailto:hello@uv01.test" method="post" enctype="text/plain">
               <input type="email" name="email" placeholder="ton email" aria-label="Email">
-              <button class="btn primary" type="submit">Me prevenir</button>
+              <button class="btn primary" type="submit">Entrer dans UV/01</button>
             </form>
-            <p class="fine">Prototype de store. Le formulaire utilise un email temporaire a remplacer par Klaviyo, Shopify, Framer Forms ou Tally.</p>
+            <p class="fine">Formulaire prototype a connecter ensuite a Shopify, Klaviyo, Tally ou Framer Forms.</p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer>
       <div class="wrap">
-        <p><strong>UV/01</strong> - Anti-UV performance pour sportifs au soleil. Padel, running, training, travel.</p>
+        <p><strong>UV/01</strong> - L'uniforme solaire des sportifs sociaux. Court. Heat. Status.</p>
       </div>
     </footer>
-  </div>
 
-  <div class="sticky-mobile" aria-label="Action mobile">
-    <span>Beta drop anti-UV</span>
-    <a class="btn primary" href="#waitlist">Acces</a>
+    <div class="sticky">
+      <span>Beta club UV/01</span>
+      <a class="btn primary" href="#waitlist">Entrer</a>
+    </div>
   </div>
 </body>
 </html>
