@@ -13,7 +13,7 @@ Reference feel:
 - Lululemon technical product pages
 - Vuori understated active lifestyle
 
-Sixam should feel expensive, bright and active, not loud or low-cost.
+Sixam should feel expensive, bright and active, not loud or low-cost. The site must sell a lifestyle before it sells product specs.
 
 Updated competitive lesson:
 
@@ -42,15 +42,15 @@ Updated competitive lesson:
 
 1. Hero:
    - Brand: SIXAM.
-   - Clear value proposition.
+   - Clear lifestyle promise.
    - One CTA.
    - One short product/drop note.
 
-2. Problem:
-   - Keep it light and identity-led.
-   - Avoid making this section feel like a business brief.
+2. Lifestyle:
+   - Club, effort, sun, weekend, travel.
+   - Make visitors recognize the life they want to signal.
 
-3. Solution:
+3. Signs:
    - Show the Sixam product world.
    - Accessories as style markers.
    - Technical benefits stay secondary.
@@ -87,6 +87,9 @@ Use plain French.
 
 Good:
 
+- Sixam habille le mode de vie sport au soleil.
+- Les premiers objets du Club Solaire.
+- Entrer dans Sixam commence par le kit.
 - Des vêtements anti-UV premium pour les sports au soleil.
 - Protection solaire, tissu respirant, coupe soignée.
 - Pour jouer, courir, s'entraîner et voyager quand la journée se passe dehors.
@@ -97,6 +100,8 @@ Good:
 
 Bad:
 
+- Page sections that read like problem/solution consulting slides.
+- Treating products as gadgets instead of lifestyle signs.
 - La peau protegee. Le statut visible.
 - Reste net quand le soleil tape as the main H1.
 - Comprendre le monde.

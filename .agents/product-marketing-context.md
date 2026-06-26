@@ -10,7 +10,7 @@ Category: premium sun-performance apparel.
 
 Short positioning:
 
-Sixam creates premium anti-UV performance pieces for sport under the sun.
+Sixam sells a premium sport-under-the-sun lifestyle through anti-UV performance pieces.
 
 Clear value proposition:
 
@@ -56,6 +56,7 @@ Sixam combines:
 2. Sweat management.
 3. Premium fit and status.
 4. Sport-social use cases: sports au soleil, club sport, training, running and sunny travel.
+5. Lifestyle belonging: club, effort, travel, sun, visible discipline.
 
 Competitive inspiration:
 
@@ -96,10 +97,10 @@ The offer should feel premium. Do not race to low pricing.
 
 ## Messaging hierarchy
 
-1. Clear value proposition: premium anti-UV sportswear for sports under the sun.
-2. Brand identity: sunny premium sport identity, not a strategic brief.
+1. Lifestyle promise: Sixam habille le mode de vie sport au soleil.
+2. Brand identity: club solaire, visible discipline, premium active life.
 3. Product signatures: visiere, brassards, bandana, sweat accessories, then apparel.
-4. Offer: simple founding drop.
+4. Offer: the founding kit as an entry point into the lifestyle.
 5. Access: founder waitlist.
 
 ## Copy rules
@@ -117,3 +118,6 @@ The offer should feel premium. Do not race to low pricing.
 - The public page is not the research brief. Do not expose matrices, competitor logic or internal positioning explanations.
 - Avoid big stacked explanation cards for UV / sweat / style. Use lighter editorial rows, product visuals, short signatures and collection cards.
 - First visible product signals should be Sixam-branded accessories: visiere first, brassards second.
+- Never present products as isolated gadgets. Each product is a visible sign of the Sixam lifestyle.
+- The site must sell belonging first, product utility second.
+- Use lifestyle language: Club Solaire, uniform, kit, first circle, sport dehors, voyage actif, rester net, arriver equipe.

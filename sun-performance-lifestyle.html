@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sixam - Vêtements anti-UV premium pour les sports au soleil</title>
-  <meta name="description" content="Sixam crée des vêtements et accessoires anti-UV premium pour les sports au soleil : tops UPF, casquettes, bandanas, manchons et pièces anti-sueur.">
+  <title>Sixam - Le mode de vie sport au soleil</title>
+  <meta name="description" content="Sixam habille le mode de vie sport au soleil : visières, brassards UV, bandanas et accessoires anti-sueur pour rester protégé, net et identifiable.">
   <style>
     :root {
       --ink: #14150f;
@@ -504,6 +504,65 @@
       font-size: 17px;
     }
 
+    .lifestyle-wall {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .moment {
+      position: relative;
+      min-height: 230px;
+      display: flex;
+      align-items: end;
+      overflow: hidden;
+      border-radius: var(--r);
+      border: 1px solid var(--line);
+      background: var(--cream-2);
+      box-shadow: 0 12px 35px rgba(45, 43, 25, .08);
+    }
+
+    .moment img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.08) contrast(1.02);
+      transition: transform .7s ease;
+    }
+
+    .moment:hover img {
+      transform: scale(1.045);
+    }
+
+    .moment::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 28%, rgba(20,21,15,.7));
+    }
+
+    .moment-copy {
+      position: relative;
+      z-index: 1;
+      padding: 16px;
+      color: var(--white);
+    }
+
+    .moment-copy span {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--sun);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    .moment-copy strong {
+      font-size: 23px;
+      line-height: 1;
+    }
+
     .collection-grid {
       display: grid;
       gap: 14px;
@@ -714,6 +773,10 @@
       .collection-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      .lifestyle-wall {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
 
     @media (min-width: 860px) {
@@ -768,8 +831,8 @@
       <div class="nav-inner">
         <a class="logo" href="#top" aria-label="Sixam accueil">SIXAM</a>
         <nav class="nav-links" aria-label="Navigation principale">
-          <a href="#probleme">Problème</a>
-          <a href="#solution">Solution</a>
+          <a href="#lifestyle">Mode de vie</a>
+          <a href="#signes">Signes</a>
           <a href="#collection">Collection</a>
           <a href="#waitlist">Accès</a>
         </nav>
@@ -779,8 +842,8 @@
         </button>
       </div>
       <nav class="drawer" aria-label="Menu mobile" aria-hidden="true">
-        <a href="#probleme">Problème</a>
-        <a href="#solution">Solution</a>
+        <a href="#lifestyle">Mode de vie</a>
+        <a href="#signes">Signes</a>
         <a href="#collection">Collection</a>
         <a href="#waitlist">Accès fondateur</a>
       </nav>
@@ -790,43 +853,43 @@
       <section class="hero" id="top">
         <span class="sun-disc" aria-hidden="true"></span>
         <div class="hero-inner">
-          <p class="eyebrow">Anti-UV performance premium</p>
-          <h1>Des vêtements anti-UV premium pour les sports au soleil.</h1>
-          <p class="hero-copy">Protection UPF, matières respirantes, détails anti-sueur. Pour jouer, courir, s'entraîner et voyager quand la journée se passe dehors.</p>
+          <p class="eyebrow">Club solaire / Drop 01</p>
+          <h1>Sixam habille le mode de vie sport au soleil.</h1>
+          <p class="hero-copy">Pour ceux qui jouent dehors, s'entraînent, voyagent léger, arrivent au club et veulent rester protégés, nets, reconnaissables.</p>
           <div class="hero-action">
             <a class="btn primary" href="#waitlist">Accéder au drop fondateur</a>
           </div>
-          <p class="hero-note">Premier drop : top solaire, casquette, bandana, manchons et kit anti-sueur.</p>
+          <p class="hero-note">Premier drop : visière Sixam, brassards UV, bandana et kit anti-sueur.</p>
         </div>
       </section>
 
       <div class="ticker" aria-hidden="true">
         <div class="ticker-track">
-          <span>UPF 50+ cible</span><span>Quick-dry</span><span>Sports au soleil</span><span>Anti-sueur</span><span>Voyage</span><span>Coupe premium</span>
-          <span>UPF 50+ cible</span><span>Quick-dry</span><span>Sports au soleil</span><span>Anti-sueur</span><span>Voyage</span><span>Coupe premium</span>
+          <span>Club solaire</span><span>Sport dehors</span><span>Voyage actif</span><span>Anti-UV</span><span>Anti-sueur</span><span>Signature Sixam</span>
+          <span>Club solaire</span><span>Sport dehors</span><span>Voyage actif</span><span>Anti-UV</span><span>Anti-sueur</span><span>Signature Sixam</span>
         </div>
       </div>
 
-      <section id="probleme">
+      <section id="lifestyle">
         <div class="wrap reveal">
           <div class="section-head">
-            <p class="eyebrow">Identité</p>
-            <h2>Une marque solaire pour ceux qui vivent le sport dehors.</h2>
-            <p class="lead">Sixam habille les sessions au soleil : club, course, training, voyage. Des pièces propres, techniques, immédiatement reconnaissables.</p>
+            <p class="eyebrow">Mode de vie</p>
+            <h2>Le club, l'effort, le soleil, le départ en week-end.</h2>
+            <p class="lead">Sixam parle à ceux qui veulent une vie active visible : sport dehors, corps entretenu, équipement propre, détails premium.</p>
           </div>
 
           <div class="signal-list">
             <div class="signal">
-              <strong>Soleil.</strong>
-              <p class="muted">Protection textile, visières, brassards et zones exposées couvertes.</p>
+              <strong>Avant.</strong>
+              <p class="muted">Arriver équipé. Visière propre, brassards prêts, sac léger.</p>
             </div>
             <div class="signal">
-              <strong>Effort.</strong>
-              <p class="muted">Matières légères, séchage rapide, détails anti-sueur.</p>
+              <strong>Pendant.</strong>
+              <p class="muted">Jouer, courir, s'entraîner au soleil sans perdre l'allure.</p>
             </div>
             <div class="signal">
-              <strong>Allure.</strong>
-              <p class="muted">Un rendu premium, pas outdoor technique, pas médical.</p>
+              <strong>Après.</strong>
+              <p class="muted">Rester net, repartir au club, en terrasse ou en voyage.</p>
             </div>
           </div>
 
@@ -837,22 +900,46 @@
             <span>Voyage</span>
             <span>Soleil</span>
           </div>
+
+          <div class="lifestyle-wall" aria-label="Moments du mode de vie Sixam">
+            <article class="moment">
+              <img src="https://images.pexels.com/photos/23379597/pexels-photo-23379597.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Raquettes sur un court extérieur">
+              <div class="moment-copy">
+                <span>Club</span>
+                <strong>Le rendez-vous dehors.</strong>
+              </div>
+            </article>
+            <article class="moment">
+              <img src="https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sportive sur court extérieur au soleil">
+              <div class="moment-copy">
+                <span>Effort</span>
+                <strong>Rester net pendant l'effort.</strong>
+              </div>
+            </article>
+            <article class="moment">
+              <img src="https://images.pexels.com/photos/342361/pexels-photo-342361.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Court extérieur ensoleillé">
+              <div class="moment-copy">
+                <span>Voyage</span>
+                <strong>Le kit qui suit le soleil.</strong>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="solution-band" id="solution">
+      <section class="solution-band" id="signes">
         <div class="wrap reveal">
           <div class="solution-layout">
             <div>
               <div class="section-head">
-                <p class="eyebrow">La réponse Sixam</p>
-                <h2>Des accessoires solaires, pensés comme des marqueurs de style.</h2>
-                <p class="lead">La visière, les brassards, le bandana, le top. Chaque pièce protège, absorbe ou couvre, mais l'ensemble doit surtout donner envie d'être porté.</p>
+                <p class="eyebrow">Les signes Sixam</p>
+                <h2>Des objets simples qui deviennent un uniforme.</h2>
+                <p class="lead">La visière, les brassards, le bandana. Ce sont des accessoires, mais surtout des signes : on comprend le style de vie avant même de lire la fiche produit.</p>
               </div>
 
               <div class="brand-line">
-                <p>Le premier signe Sixam doit se voir vite : une visière nette, un brassard propre, une couleur solaire, une silhouette qui dit sport premium sans avoir besoin de l'expliquer.</p>
-                <p>La technique reste là : UPF, séchage rapide, gestion de la sueur. Elle soutient l'image, elle ne prend pas toute la place.</p>
+                <p>Sixam doit donner envie d'appartenir à ce monde : les gens qui bougent tôt, jouent dehors, voyagent léger et restent impeccables même quand il fait chaud.</p>
+                <p>La technique reste là : UPF, séchage rapide, gestion de la sueur. Elle prouve le sérieux, mais le désir vient du mode de vie.</p>
               </div>
             </div>
 
@@ -874,8 +961,8 @@
         <div class="wrap reveal">
           <div class="section-head">
             <p class="eyebrow">Collection solaire</p>
-            <h2>Premier drop : visières, brassards, pièces solaires.</h2>
-            <p class="lead">On commence par les accessoires qui signent la marque, puis on élargit vers les vêtements anti-UV.</p>
+            <h2>Les premiers objets du Club Solaire.</h2>
+            <p class="lead">Une sélection courte pour installer l'identité Sixam : visible, utile, premium, facile à porter tout l'été.</p>
           </div>
 
           <div class="collection-grid">
@@ -886,7 +973,7 @@
                   <span>Visière Sixam</span>
                   <span class="price">49 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Légère, solaire, bande anti-sueur.</p>
+                <p class="muted" style="margin-top:10px;">Le signe visible du club au soleil.</p>
                 <div class="specs">
                   <span class="spec">signature</span>
                   <span class="spec">anti-sueur</span>
@@ -902,7 +989,7 @@
                   <span>Brassards UV</span>
                   <span class="price">35 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Bras protégés, tenue légère, look net.</p>
+                <p class="muted" style="margin-top:10px;">Le détail d'initié : protection, tenue, allure.</p>
                 <div class="specs">
                   <span class="spec">UPF cible</span>
                   <span class="spec">bras</span>
@@ -918,7 +1005,7 @@
                   <span>Bandana UV</span>
                   <span class="price">39 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Nuque, cou, visage. Se range en poche.</p>
+                <p class="muted" style="margin-top:10px;">Le geste soleil, sport et voyage.</p>
                 <div class="specs">
                   <span class="spec">modulable</span>
                   <span class="spec">voyage</span>
@@ -934,7 +1021,7 @@
                   <span>Top UPF 50+</span>
                   <span class="price">95 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Couvrant, léger, respirant.</p>
+                <p class="muted" style="margin-top:10px;">La tenue complète pour les longues sessions.</p>
                 <div class="specs">
                   <span class="spec">UPF cible</span>
                   <span class="spec">quick-dry</span>
@@ -950,7 +1037,7 @@
                   <span>Sweat Control Kit</span>
                   <span class="price">35 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Bandeau, poignets, serviette compacte.</p>
+                <p class="muted" style="margin-top:10px;">Le rituel pour rester net après l'effort.</p>
                 <div class="specs">
                   <span class="spec">anti-sueur</span>
                   <span class="spec">sac sport</span>
@@ -966,7 +1053,7 @@
                   <span>Pack fondateur</span>
                   <span class="price">149 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Visière, brassards, bandana et kit anti-sueur.</p>
+                <p class="muted" style="margin-top:10px;">L'uniforme solaire pour entrer dans Sixam.</p>
                 <div class="specs">
                   <span class="spec">drop limité</span>
                   <span class="spec">premium</span>
@@ -983,8 +1070,8 @@
           <div class="offer-panel">
             <div>
               <p class="eyebrow">Offre fondatrice</p>
-              <h2>Le drop doit devenir reconnaissable.</h2>
-              <p class="lead" style="margin-top:14px;">La visière et les brassards posent l'identité. Le reste complète l'usage : soleil, sueur, voyage, sport dehors.</p>
+              <h2>Entrer dans Sixam commence par le kit.</h2>
+              <p class="lead" style="margin-top:14px;">Pas une pile d'accessoires. Un uniforme solaire : ce qu'on met dans le sac avant d'aller jouer dehors.</p>
             </div>
             <div>
               <div class="offer-list">
@@ -1009,8 +1096,8 @@
         <div class="wrap reveal">
           <div class="waitlist">
             <p class="eyebrow">Accès fondateur</p>
-            <h2>Entre dans la première liste Sixam.</h2>
-            <p class="lead">Aucun paiement maintenant. Tu reçois les tests matières, les premières couleurs et l'accès au drop fondateur.</p>
+            <h2>Entre dans le premier cercle Sixam.</h2>
+            <p class="lead">Aucun paiement maintenant. Tu reçois les tests matières, les couleurs du drop et l'accès au premier kit du Club Solaire.</p>
             <form class="form" action="mailto:hello@sixam.test" method="post" enctype="text/plain">
               <input type="email" name="email" placeholder="ton email" aria-label="Email">
               <button class="btn sun" type="submit">Recevoir l'accès</button>
