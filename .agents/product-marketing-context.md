@@ -121,3 +121,6 @@ The offer should feel premium. Do not race to low pricing.
 - Never present products as isolated gadgets. Each product is a visible sign of the Sixam lifestyle.
 - The site must sell belonging first, product utility second.
 - Use lifestyle language: Club Solaire, uniform, kit, first circle, sport dehors, voyage actif, rester net, arriver equipe.
+- Use Reddit/VOC concreteness: creme qui coule dans les yeux, moins de creme sur les bras, pas de coton trempe, leger, respirant, quick-dry.
+- Avoid abstract manifesto lines. A good line should describe a recognizable situation.
+- Do not overpromise that textile products replace sunscreen. Frame them as a cleaner, more practical routine around sun exposure.

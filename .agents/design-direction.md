@@ -37,6 +37,7 @@ Updated competitive lesson:
 - Use short blocks: headline, one sentence, proof chips only where useful.
 - Characteristics should scan in 2 seconds.
 - Avoid big stacked white cards for conceptual explanations. Use editorial rows, visual rhythm, product tiles and short signature chips.
+- Product cards should use clear generic product packshots/mockups when supplier photos are not available, instead of unrelated lifestyle photos.
 
 ## Required page architecture
 
@@ -88,6 +89,9 @@ Use plain French.
 Good:
 
 - Sixam habille le mode de vie sport au soleil.
+- Le kit solaire des sportifs de club.
+- Jouer dehors. Rester net. Etre reconnu.
+- Moins de creme sur les bras, plus de tenue.
 - Les premiers objets du Club Solaire.
 - Entrer dans Sixam commence par le kit.
 - Des vêtements anti-UV premium pour les sports au soleil.
@@ -102,6 +106,7 @@ Bad:
 
 - Page sections that read like problem/solution consulting slides.
 - Treating products as gadgets instead of lifestyle signs.
+- Abstract lifestyle lines that do not describe a real recognizable moment.
 - La peau protegee. Le statut visible.
 - Reste net quand le soleil tape as the main H1.
 - Comprendre le monde.

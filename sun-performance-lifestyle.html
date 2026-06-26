@@ -584,6 +584,185 @@
       filter: saturate(1.06) contrast(1.02);
     }
 
+    .product-shot {
+      min-height: 250px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 65% 32%, rgba(255,216,79,.32), transparent 25%),
+        linear-gradient(145deg, #fffdf6, #efe5ca);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .product-shot::before {
+      content: "SIXAM";
+      position: absolute;
+      left: 16px;
+      top: 14px;
+      color: rgba(39,79,56,.28);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .product-shot::after {
+      content: "";
+      position: absolute;
+      inset: 22px;
+      border: 1px solid rgba(20,21,15,.07);
+      border-radius: 999px;
+    }
+
+    .mock {
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 22px 24px rgba(45,43,25,.16));
+    }
+
+    .mock.visor {
+      width: 190px;
+      height: 94px;
+      border-radius: 62px 62px 18px 18px;
+      background: linear-gradient(180deg, #fff, #efe9d8);
+      border: 1px solid rgba(20,21,15,.13);
+      transform: translateY(-4px);
+    }
+
+    .mock.visor::before {
+      content: "";
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      top: 18px;
+      height: 34px;
+      border-radius: 999px;
+      background: var(--cream);
+      border: 1px solid rgba(20,21,15,.12);
+      box-shadow: inset 0 -8px 14px rgba(39,79,56,.05);
+    }
+
+    .mock.visor::after {
+      content: "";
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: -28px;
+      height: 58px;
+      border-radius: 12px 12px 58px 58px;
+      background: linear-gradient(180deg, #fff, #e7dfcb);
+      border: 1px solid rgba(20,21,15,.12);
+    }
+
+    .mock.sleeves {
+      width: 210px;
+      height: 150px;
+    }
+
+    .mock.sleeves::before,
+    .mock.sleeves::after {
+      content: "";
+      position: absolute;
+      width: 54px;
+      height: 160px;
+      border-radius: 34px 34px 18px 18px;
+      background: linear-gradient(90deg, #fbfbf7, #e8e2d3);
+      border: 1px solid rgba(20,21,15,.12);
+      transform: rotate(16deg);
+    }
+
+    .mock.sleeves::before {
+      left: 48px;
+      top: -6px;
+    }
+
+    .mock.sleeves::after {
+      right: 44px;
+      top: 0;
+      transform: rotate(-16deg);
+    }
+
+    .mock.bandana {
+      width: 150px;
+      height: 150px;
+      background:
+        linear-gradient(135deg, transparent 47%, rgba(39,79,56,.16) 48% 52%, transparent 53%),
+        linear-gradient(45deg, #fff, #ece4d0);
+      border: 1px solid rgba(20,21,15,.12);
+      transform: rotate(45deg);
+      border-radius: 8px;
+    }
+
+    .mock.top {
+      width: 160px;
+      height: 170px;
+      background: linear-gradient(180deg, #fff, #eae3d1);
+      clip-path: polygon(20% 0, 38% 0, 50% 14%, 62% 0, 80% 0, 100% 28%, 82% 43%, 78% 100%, 22% 100%, 18% 43%, 0 28%);
+      border-radius: 14px;
+    }
+
+    .mock.sweat {
+      width: 210px;
+      height: 150px;
+    }
+
+    .mock.sweat::before {
+      content: "";
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      top: 26px;
+      height: 48px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #fff, #e9e2d1);
+      border: 1px solid rgba(20,21,15,.12);
+    }
+
+    .mock.sweat::after {
+      content: "";
+      position: absolute;
+      left: 42px;
+      bottom: 12px;
+      width: 124px;
+      height: 66px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #fff, #e9e2d1);
+      border: 1px solid rgba(20,21,15,.12);
+      box-shadow: 34px -8px 0 -10px #f7f2e5;
+    }
+
+    .mock.pack {
+      width: 210px;
+      height: 170px;
+    }
+
+    .mock.pack::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 24px;
+      width: 154px;
+      height: 58px;
+      border-radius: 999px 999px 22px 22px;
+      background: linear-gradient(180deg, #fff, #e8dfc7);
+      border: 1px solid rgba(20,21,15,.12);
+    }
+
+    .mock.pack::after {
+      content: "";
+      position: absolute;
+      right: 20px;
+      bottom: 8px;
+      width: 54px;
+      height: 134px;
+      border-radius: 34px 34px 18px 18px;
+      background: linear-gradient(90deg, #fbfbf7, #e8e2d3);
+      border: 1px solid rgba(20,21,15,.12);
+      transform: rotate(-14deg);
+      box-shadow: -96px 22px 0 -18px #fffaf0;
+    }
+
     .product-body {
       padding: 16px;
     }
@@ -854,8 +1033,8 @@
         <span class="sun-disc" aria-hidden="true"></span>
         <div class="hero-inner">
           <p class="eyebrow">Club solaire / Drop 01</p>
-          <h1>Sixam habille le mode de vie sport au soleil.</h1>
-          <p class="hero-copy">Pour ceux qui jouent dehors, s'entraînent, voyagent léger, arrivent au club et veulent rester protégés, nets, reconnaissables.</p>
+          <h1>Le kit solaire des sportifs de club.</h1>
+          <p class="hero-copy">Des pièces visibles pour jouer dehors, éviter la crème qui coule, gérer la sueur et rester propre pendant la session comme après.</p>
           <div class="hero-action">
             <a class="btn primary" href="#waitlist">Accéder au drop fondateur</a>
           </div>
@@ -874,22 +1053,22 @@
         <div class="wrap reveal">
           <div class="section-head">
             <p class="eyebrow">Mode de vie</p>
-            <h2>Le club, l'effort, le soleil, le départ en week-end.</h2>
-            <p class="lead">Sixam parle à ceux qui veulent une vie active visible : sport dehors, corps entretenu, équipement propre, détails premium.</p>
+            <h2>Jouer dehors. Rester net. Être reconnu.</h2>
+            <p class="lead">Sixam s'adresse à ceux qui aiment l'effort visible : le club, les sessions au soleil, le sac prêt, les détails qui disent qu'on sait s'équiper.</p>
           </div>
 
           <div class="signal-list">
             <div class="signal">
               <strong>Avant.</strong>
-              <p class="muted">Arriver équipé. Visière propre, brassards prêts, sac léger.</p>
+              <p class="muted">Visière en place, brassards prêts, sac léger. Tu arrives déjà dans le bon univers.</p>
             </div>
             <div class="signal">
               <strong>Pendant.</strong>
-              <p class="muted">Jouer, courir, s'entraîner au soleil sans perdre l'allure.</p>
+              <p class="muted">Tu bouges, il fait chaud, tu restes propre. Pas de crème dans les yeux, pas de coton trempé.</p>
             </div>
             <div class="signal">
               <strong>Après.</strong>
-              <p class="muted">Rester net, repartir au club, en terrasse ou en voyage.</p>
+              <p class="muted">Tu ranges le kit, tu repars sans avoir l'air rincé par ta session.</p>
             </div>
           </div>
 
@@ -906,21 +1085,21 @@
               <img src="https://images.pexels.com/photos/23379597/pexels-photo-23379597.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Raquettes sur un court extérieur">
               <div class="moment-copy">
                 <span>Club</span>
-                <strong>Le rendez-vous dehors.</strong>
+                <strong>Là où le kit commence à se voir.</strong>
               </div>
             </article>
             <article class="moment">
               <img src="https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sportive sur court extérieur au soleil">
               <div class="moment-copy">
                 <span>Effort</span>
-                <strong>Rester net pendant l'effort.</strong>
+                <strong>Chaud, exposé, mais maîtrisé.</strong>
               </div>
             </article>
             <article class="moment">
               <img src="https://images.pexels.com/photos/342361/pexels-photo-342361.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Court extérieur ensoleillé">
               <div class="moment-copy">
                 <span>Voyage</span>
-                <strong>Le kit qui suit le soleil.</strong>
+                <strong>Le même sac pour jouer et partir.</strong>
               </div>
             </article>
           </div>
@@ -933,13 +1112,13 @@
             <div>
               <div class="section-head">
                 <p class="eyebrow">Les signes Sixam</p>
-                <h2>Des objets simples qui deviennent un uniforme.</h2>
-                <p class="lead">La visière, les brassards, le bandana. Ce sont des accessoires, mais surtout des signes : on comprend le style de vie avant même de lire la fiche produit.</p>
+                <h2>Ce n'est pas une tenue complète. C'est ce qui signe la tenue.</h2>
+                <p class="lead">La visière, les brassards, le bandana. Trois objets simples qui changent tout : on voit le soleil, l'effort et l'intention.</p>
               </div>
 
               <div class="brand-line">
-                <p>Sixam doit donner envie d'appartenir à ce monde : les gens qui bougent tôt, jouent dehors, voyagent léger et restent impeccables même quand il fait chaud.</p>
-                <p>La technique reste là : UPF, séchage rapide, gestion de la sueur. Elle prouve le sérieux, mais le désir vient du mode de vie.</p>
+                <p>Le produit doit se comprendre en une seconde : quelqu'un qui fait attention à son sport, à sa peau, à son image.</p>
+                <p>La technique reste là : UPF, séchage rapide, gestion de la sueur. Elle rassure. Ce qui donne envie, c'est l'allure.</p>
               </div>
             </div>
 
@@ -961,19 +1140,21 @@
         <div class="wrap reveal">
           <div class="section-head">
             <p class="eyebrow">Collection solaire</p>
-            <h2>Les premiers objets du Club Solaire.</h2>
-            <p class="lead">Une sélection courte pour installer l'identité Sixam : visible, utile, premium, facile à porter tout l'été.</p>
+            <h2>Les premiers signes Sixam.</h2>
+            <p class="lead">Une sélection courte, facile à porter, pensée pour être vue autant que pour servir.</p>
           </div>
 
           <div class="collection-grid">
             <article class="product">
-              <img src="https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sportive sur court extérieur">
+              <div class="product-shot" role="img" aria-label="Packshot générique d'une visière Sixam">
+                <span class="mock visor"></span>
+              </div>
               <div class="product-body">
                 <div class="product-line">
                   <span>Visière Sixam</span>
                   <span class="price">49 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Le signe visible du club au soleil.</p>
+                <p class="muted" style="margin-top:10px;">Le premier objet qu'on remarque.</p>
                 <div class="specs">
                   <span class="spec">signature</span>
                   <span class="spec">anti-sueur</span>
@@ -983,13 +1164,15 @@
             </article>
 
             <article class="product">
-              <img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Balle et raquette sur court ensoleillé">
+              <div class="product-shot" role="img" aria-label="Packshot générique de brassards UV">
+                <span class="mock sleeves"></span>
+              </div>
               <div class="product-body">
                 <div class="product-line">
                   <span>Brassards UV</span>
                   <span class="price">35 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Le détail d'initié : protection, tenue, allure.</p>
+                <p class="muted" style="margin-top:10px;">Moins de crème sur les bras, plus de tenue.</p>
                 <div class="specs">
                   <span class="spec">UPF cible</span>
                   <span class="spec">bras</span>
@@ -999,13 +1182,15 @@
             </article>
 
             <article class="product">
-              <img src="https://images.pexels.com/photos/3764538/pexels-photo-3764538.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Athlètes courant dehors au soleil">
+              <div class="product-shot" role="img" aria-label="Packshot générique d'un bandana UV">
+                <span class="mock bandana"></span>
+              </div>
               <div class="product-body">
                 <div class="product-line">
                   <span>Bandana UV</span>
                   <span class="price">39 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Le geste soleil, sport et voyage.</p>
+                <p class="muted" style="margin-top:10px;">Cou, nuque, tête : le geste soleil.</p>
                 <div class="specs">
                   <span class="spec">modulable</span>
                   <span class="spec">voyage</span>
@@ -1015,13 +1200,15 @@
             </article>
 
             <article class="product">
-              <img src="https://images.pexels.com/photos/31559342/pexels-photo-31559342.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Joueur en tenue sport premium sur court">
+              <div class="product-shot" role="img" aria-label="Packshot générique d'un top UPF">
+                <span class="mock top"></span>
+              </div>
               <div class="product-body">
                 <div class="product-line">
                   <span>Top UPF 50+</span>
                   <span class="price">95 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">La tenue complète pour les longues sessions.</p>
+                <p class="muted" style="margin-top:10px;">Pour les longues sessions exposées.</p>
                 <div class="specs">
                   <span class="spec">UPF cible</span>
                   <span class="spec">quick-dry</span>
@@ -1031,13 +1218,15 @@
             </article>
 
             <article class="product">
-              <img src="https://images.pexels.com/photos/23379597/pexels-photo-23379597.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Accessoires de sport sur court extérieur">
+              <div class="product-shot" role="img" aria-label="Packshot générique d'un kit anti-sueur">
+                <span class="mock sweat"></span>
+              </div>
               <div class="product-body">
                 <div class="product-line">
                   <span>Sweat Control Kit</span>
                   <span class="price">35 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Le rituel pour rester net après l'effort.</p>
+                <p class="muted" style="margin-top:10px;">Bandeau, poignets, serviette. Le propre dans le sac.</p>
                 <div class="specs">
                   <span class="spec">anti-sueur</span>
                   <span class="spec">sac sport</span>
@@ -1047,13 +1236,15 @@
             </article>
 
             <article class="product">
-              <img src="https://images.pexels.com/photos/342361/pexels-photo-342361.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Terrain extérieur ensoleillé">
+              <div class="product-shot" role="img" aria-label="Packshot générique du pack fondateur Sixam">
+                <span class="mock pack"></span>
+              </div>
               <div class="product-body">
                 <div class="product-line">
                   <span>Pack fondateur</span>
                   <span class="price">149 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">L'uniforme solaire pour entrer dans Sixam.</p>
+                <p class="muted" style="margin-top:10px;">Le nécessaire Sixam pour jouer dehors.</p>
                 <div class="specs">
                   <span class="spec">drop limité</span>
                   <span class="spec">premium</span>
@@ -1070,8 +1261,8 @@
           <div class="offer-panel">
             <div>
               <p class="eyebrow">Offre fondatrice</p>
-              <h2>Entrer dans Sixam commence par le kit.</h2>
-              <p class="lead" style="margin-top:14px;">Pas une pile d'accessoires. Un uniforme solaire : ce qu'on met dans le sac avant d'aller jouer dehors.</p>
+              <h2>Le kit qu'on garde dans le sac.</h2>
+              <p class="lead" style="margin-top:14px;">Visière, brassards, bandana, anti-sueur. Tout ce qu'il faut pour jouer dehors sans finir rouge, trempé, brouillon.</p>
             </div>
             <div>
               <div class="offer-list">
@@ -1096,8 +1287,8 @@
         <div class="wrap reveal">
           <div class="waitlist">
             <p class="eyebrow">Accès fondateur</p>
-            <h2>Entre dans le premier cercle Sixam.</h2>
-            <p class="lead">Aucun paiement maintenant. Tu reçois les tests matières, les couleurs du drop et l'accès au premier kit du Club Solaire.</p>
+            <h2>Accède au premier drop Sixam.</h2>
+            <p class="lead">Aucun paiement maintenant. Tu reçois les tests matières, les couleurs retenues et l'accès au premier kit solaire.</p>
             <form class="form" action="mailto:hello@sixam.test" method="post" enctype="text/plain">
               <input type="email" name="email" placeholder="ton email" aria-label="Email">
               <button class="btn sun" type="submit">Recevoir l'accès</button>
