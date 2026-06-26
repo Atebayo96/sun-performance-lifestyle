@@ -37,7 +37,7 @@ Updated competitive lesson:
 - Use short blocks: headline, one sentence, proof chips only where useful.
 - Characteristics should scan in 2 seconds.
 - Avoid big stacked white cards for conceptual explanations. Use editorial rows, visual rhythm, product tiles and short signature chips.
-- Product cards should use clear generic product packshots/mockups when supplier photos are not available, instead of unrelated lifestyle photos.
+- Product cards should use real generic product images when supplier photos are not available, instead of drawn mockups or unrelated lifestyle photos.
 
 ## Required page architecture
 
@@ -90,7 +90,6 @@ Good:
 
 - Plein soleil. Sans compromis.
 - Dehors, longtemps.
-- Jouer dehors. Rester net. Etre reconnu.
 - Moins de creme sur les bras, plus de tenue.
 - Les premieres pieces Sixam.
 - Entrer dans Sixam commence par le kit.

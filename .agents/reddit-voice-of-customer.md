@@ -54,7 +54,6 @@ Copy implication:
 
 - Plein soleil. Sans compromis.
 - Dehors, longtemps.
-- Jouer dehors. Rester net. Etre reconnu.
 - Des pieces visibles pour jouer dehors, eviter la creme qui coule, gerer la sueur et rester propre pendant la session comme apres.
 - Moins de creme sur les bras, plus de tenue.
 - Le premier objet qu'on remarque.

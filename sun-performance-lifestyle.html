@@ -578,6 +578,41 @@
       box-shadow: 0 24px 55px rgba(45, 43, 25, .14);
     }
 
+    .motion-ready .product,
+    .motion-ready .moment {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .72s ease, transform .72s ease, box-shadow .22s ease;
+    }
+
+    .motion-ready .product.visible,
+    .motion-ready .moment.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .motion-ready .product:nth-child(2),
+    .motion-ready .moment:nth-child(2) {
+      transition-delay: .06s;
+    }
+
+    .motion-ready .product:nth-child(3),
+    .motion-ready .moment:nth-child(3) {
+      transition-delay: .12s;
+    }
+
+    .motion-ready .product:nth-child(4) {
+      transition-delay: .18s;
+    }
+
+    .motion-ready .product:nth-child(5) {
+      transition-delay: .24s;
+    }
+
+    .motion-ready .product:nth-child(6) {
+      transition-delay: .3s;
+    }
+
     .product img {
       height: 250px;
       object-fit: cover;
@@ -594,6 +629,22 @@
         radial-gradient(circle at 65% 32%, rgba(255,216,79,.32), transparent 25%),
         linear-gradient(145deg, #fffdf6, #efe5ca);
       border-bottom: 1px solid var(--line);
+    }
+
+    .product-shot img {
+      width: min(78%, 270px);
+      height: 210px;
+      object-fit: contain;
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 24px 26px rgba(45,43,25,.17));
+      transform: translateY(6px) scale(.98);
+      transition: transform .55s ease, filter .55s ease;
+    }
+
+    .product:hover .product-shot img {
+      transform: translateY(-2px) scale(1.04);
+      filter: drop-shadow(0 30px 30px rgba(45,43,25,.2));
     }
 
     .product-shot::before {
@@ -613,6 +664,38 @@
       inset: 22px;
       border: 1px solid rgba(20,21,15,.07);
       border-radius: 999px;
+    }
+
+    .product-shine {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: linear-gradient(110deg, transparent 28%, rgba(255,255,255,.42) 44%, transparent 60%);
+      transform: translateX(-120%);
+      transition: transform .85s ease;
+    }
+
+    .product:hover .product-shine {
+      transform: translateX(120%);
+    }
+
+    .pack-real {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      padding: 34px;
+    }
+
+    .pack-real img {
+      width: 100%;
+      height: 90px;
+      object-fit: contain;
+      transform: none;
+      filter: drop-shadow(0 14px 16px rgba(45,43,25,.12));
+    }
+
+    .product:hover .pack-real img {
+      transform: scale(1.04);
     }
 
     .mock {
@@ -1147,7 +1230,8 @@
           <div class="collection-grid">
             <article class="product">
               <div class="product-shot" role="img" aria-label="Packshot générique d'une visière Sixam">
-                <span class="mock visor"></span>
+                <img src="https://www.ezcorporateclothing.com/cdn/shop/files/i7042-i7042-logo-white-FR.png?v=1691178144&width=900" alt="Visière de sport blanche">
+                <span class="product-shine"></span>
               </div>
               <div class="product-body">
                 <div class="product-line">
@@ -1165,7 +1249,8 @@
 
             <article class="product">
               <div class="product-shot" role="img" aria-label="Packshot générique de brassards UV">
-                <span class="mock sleeves"></span>
+                <img src="https://silkysocks.com/cdn/shop/products/Arm_Sleeve_Blank_Product_Photo_1500x.jpg?v=1626795894" alt="Brassards de sport blancs">
+                <span class="product-shine"></span>
               </div>
               <div class="product-body">
                 <div class="product-line">
@@ -1183,7 +1268,8 @@
 
             <article class="product">
               <div class="product-shot" role="img" aria-label="Packshot générique d'un bandana UV">
-                <span class="mock bandana"></span>
+                <img src="https://i5.walmartimages.com/seo/SHEVERCH-6-Pack-Neck-Gaiter-Face-Mask-Sun-Protection-Cooling-Bandana-Face-Cover-Windproof-Dustproof-Neck-Scarf_ec5bef0c-332e-4276-b905-d83bba5172b6.3c800fc3791269903f86578279ee3b89.jpeg?odnHeight=864&odnWidth=576&odnBg=FFFFFF" alt="Tour de cou blanc">
+                <span class="product-shine"></span>
               </div>
               <div class="product-body">
                 <div class="product-line">
@@ -1201,7 +1287,8 @@
 
             <article class="product">
               <div class="product-shot" role="img" aria-label="Packshot générique d'un top UPF">
-                <span class="mock top"></span>
+                <img src="https://i5.walmartimages.com/seo/NELEUS-Mens-UPF-50-Long-Sleeve-Shirts-Hoodies-Sun-Protection-Workout-Dry-Fit-White-US-Size-M_481641ec-7142-4d32-ba4a-e83adeffe106.83ca9f7d3d528b0fa87acfc596b2a5f7.jpeg?odnHeight=864&odnWidth=576&odnBg=FFFFFF" alt="Top UPF blanc manches longues">
+                <span class="product-shine"></span>
               </div>
               <div class="product-body">
                 <div class="product-line">
@@ -1219,7 +1306,8 @@
 
             <article class="product">
               <div class="product-shot" role="img" aria-label="Packshot générique d'un kit anti-sueur">
-                <span class="mock sweat"></span>
+                <img src="https://i5.walmartimages.com/seo/Suddora-Wrist-Sweatbands-Athletic-Cotton-Terry-Cloth-Wristband-Pair-White_d175149f-6d16-4395-a5e9-299c6130710e_1.9a422ea5a46e7c5982b27430a7ef3897.jpeg?odnHeight=900&odnWidth=900&odnBg=FFFFFF" alt="Poignets anti-sueur blancs">
+                <span class="product-shine"></span>
               </div>
               <div class="product-body">
                 <div class="product-line">
@@ -1236,8 +1324,12 @@
             </article>
 
             <article class="product">
-              <div class="product-shot" role="img" aria-label="Packshot générique du pack fondateur Sixam">
-                <span class="mock pack"></span>
+              <div class="product-shot pack-real" role="img" aria-label="Pack fondateur Sixam avec visière, brassards, bandana et anti-sueur">
+                <img src="https://www.ezcorporateclothing.com/cdn/shop/files/i7042-i7042-logo-white-FR.png?v=1691178144&width=600" alt="Visière blanche">
+                <img src="https://silkysocks.com/cdn/shop/products/Arm_Sleeve_Blank_Product_Photo_600x.jpg?v=1626795894" alt="Brassard blanc">
+                <img src="https://i5.walmartimages.com/seo/SHEVERCH-6-Pack-Neck-Gaiter-Face-Mask-Sun-Protection-Cooling-Bandana-Face-Cover-Windproof-Dustproof-Neck-Scarf_ec5bef0c-332e-4276-b905-d83bba5172b6.3c800fc3791269903f86578279ee3b89.jpeg?odnHeight=300&odnWidth=300&odnBg=FFFFFF" alt="Tour de cou blanc">
+                <img src="https://i5.walmartimages.com/seo/Suddora-Wrist-Sweatbands-Athletic-Cotton-Terry-Cloth-Wristband-Pair-White_d175149f-6d16-4395-a5e9-299c6130710e_1.9a422ea5a46e7c5982b27430a7ef3897.jpeg?odnHeight=300&odnWidth=300&odnBg=FFFFFF" alt="Poignets anti-sueur blancs">
+                <span class="product-shine"></span>
               </div>
               <div class="product-body">
                 <div class="product-line">
@@ -1307,6 +1399,8 @@
   </div>
 
   <script>
+    document.documentElement.classList.add('motion-ready');
+
     const toggle = document.querySelector('.menu-toggle');
     const drawer = document.querySelector('.drawer');
 
@@ -1333,7 +1427,7 @@
       });
     }, { threshold: 0.16 });
 
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    document.querySelectorAll('.reveal, .product, .moment').forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>
