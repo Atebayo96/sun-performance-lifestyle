@@ -18,7 +18,11 @@ Stay protected, dry and well-dressed when the sun hits.
 
 French hero direction:
 
-Reste net quand le soleil tape.
+Des vêtements anti-UV premium pour le sport au soleil.
+
+Rejected hero line:
+
+"Reste net quand le soleil tape" is too vague. It hints at sweat/style but does not clearly say anti-UV, sport, or premium. It can be used as a secondary line, not the main value proposition.
 
 ## Target customer
 
@@ -82,7 +86,7 @@ The offer should feel premium. Do not race to low pricing.
 
 ## Messaging hierarchy
 
-1. Identity and value proposition: stay protected, dry and well-dressed under the sun.
+1. Clear value proposition: premium anti-UV sportswear for sport under the sun.
 2. Problem: normal sport clothing fails in heat, UV and sweat.
 3. Solution: anti-UV, breathable, premium cut.
 4. Offer: simple founding drop.

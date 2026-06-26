@@ -82,15 +82,32 @@ Use plain French.
 
 Good:
 
-- Reste net quand le soleil tape.
-- Des pieces anti-UV premium pour le sport au soleil.
-- Protection solaire, tissu respirant, coupe soignee.
+- Des vêtements anti-UV premium pour le sport au soleil.
+- Protection solaire, tissu respirant, coupe soignée.
+- Conçu pour padel, running, training et voyages au soleil.
 
 Bad:
 
 - La peau protegee. Le statut visible.
+- Reste net quand le soleil tape as the main H1.
 - Comprendre le monde.
 - Uniforme solaire / beta drop as the main selling idea.
+
+## Motion direction
+
+Allowed:
+
+- Soft hero image zoom.
+- Text reveal on load.
+- Scroll reveal for sections.
+- Minimal mobile menu animation.
+- A slow technical marquee for product specs.
+
+Avoid:
+
+- Bouncy animations.
+- Constant movement near CTAs.
+- Effects that make the brand feel cheap or AI-generated.
 
 ## Color system
 
