@@ -24,6 +24,18 @@ Current page direction:
 
 Sixam sells the founder pack before it sells individual objects. The public page should feel like the first visible ritual of the brand: one premium kit for sport, heat, travel and long days outside.
 
+Hero correction:
+
+The first viewport must sell the Sixam lifestyle before the pack. Do not show price, component list, or product mechanics immediately. The pack comes after the visitor understands the identity: sun, effort, travel, clean athletic presence.
+
+Current hero copy:
+
+- Eyebrow: Sixam / Mode de vie solaire
+- H1: Plein soleil. Sans perdre l'allure.
+- Body: Pour ceux qui s'entraînent, voyagent et passent leurs journées dehors quand la chaleur monte. Une allure sportive, solaire, immédiatement identifiable.
+- CTA: Entrer dans l'univers
+- Note: Première ouverture bientôt
+
 Visual direction:
 
 Use generated Sixam campaign visuals showing the mode de vie: stylish adults, outdoor court, heat, travel bag, white sun-performance accessories, premium summer light. The product should feel like part of a life people want to enter, not a supplier catalog.
@@ -105,12 +117,13 @@ The pack is the offer. Components can be shown, but the page should sell the pac
 
 ## Messaging hierarchy
 
-1. Hero promise: Plein soleil. Sans perdre l'allure.
-2. Lifestyle identity: long days outside, sport, heat, travel, clean silhouette.
-3. Pack promise: one kit that stays in the bag and comes out when the day is outside.
-4. Pack components: visiere, brassards UV, bandana UV, anti-sweat kit.
-5. Offer: founder pack as the first way to enter Sixam.
-6. Access: founder waitlist.
+1. Hero identity: Plein soleil. Sans perdre l'allure.
+2. Lifestyle recognition: long days outside, sport, heat, travel, clean athletic presence.
+3. Ritual: before, during, after the session.
+4. Pack promise: one kit that stays in the bag and comes out when the day is outside.
+5. Pack components: visiere, brassards UV, bandana UV, anti-sweat kit.
+6. Offer: founder pack as the first way to enter Sixam.
+7. Access: founder waitlist.
 
 ## Copy rules
 
@@ -138,3 +151,4 @@ The pack is the offer. Components can be shown, but the page should sell the pac
 - Do not overpromise that textile products replace sunscreen. Frame them as a cleaner, more practical routine around sun exposure.
 - Do not use "club" language in the active store page unless the user explicitly brings it back. It makes the page feel like a brief and not the lifestyle Sixam is currently building.
 - CTA direction: avoid heavy black ecommerce buttons. Use premium solar CTA styling and copy like "Demander l'accès" with a small reassurance note nearby.
+- Above-the-fold CTA can be lifestyle-first: "Entrer dans l'univers". Product/access CTA can return lower on the page.

@@ -301,8 +301,8 @@
       border-radius: 24px;
       overflow: hidden;
       background:
-        linear-gradient(180deg, rgba(255,253,246,.78), rgba(244,227,191,.72)),
-        url("assets/sixam-pack-flatlay.webp") center/cover;
+        linear-gradient(180deg, rgba(255,253,246,.12), rgba(18,20,15,.58)),
+        url("assets/sixam-ritual-during.webp") center/cover;
       box-shadow: var(--shadow);
       animation: rise .76s ease both .38s;
     }
@@ -370,6 +370,27 @@
       color: var(--sun);
       font-size: 32px;
       line-height: 1;
+    }
+
+    .lifestyle-points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,253,246,.2);
+    }
+
+    .lifestyle-points span {
+      min-height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,253,246,.2);
+      border-radius: 999px;
+      color: rgba(255,253,246,.84);
+      font-size: 11px;
+      font-weight: 950;
+      text-transform: uppercase;
     }
 
     .ticker {
@@ -784,23 +805,24 @@
         <div class="hero-inner">
           <div class="hero-grid">
             <div>
-              <p class="eyebrow">Drop 01 / Pack plein soleil</p>
+              <p class="eyebrow">Sixam / Mode de vie solaire</p>
               <h1>Plein soleil. Sans perdre l'allure.</h1>
-              <p class="hero-copy">Le premier pack Sixam réunit les essentiels pour les journées de sport, de chaleur et de voyage.</p>
+              <p class="hero-copy">Pour ceux qui s'entraînent, voyagent et passent leurs journées dehors quand la chaleur monte. Une allure sportive, solaire, immédiatement identifiable.</p>
               <div class="hero-action">
-                <a class="btn" href="#waitlist">Demander l'accès</a>
-                <p class="hero-action-note">Pack fondateur limité / aucun paiement maintenant</p>
+                <a class="btn" href="#rituel">Entrer dans l'univers</a>
+                <p class="hero-action-note">Première ouverture bientôt</p>
               </div>
             </div>
 
-            <article class="pack-card" aria-label="Pack fondateur Sixam">
-              <span class="pack-label">Pack 01</span>
+            <article class="pack-card" aria-label="Mode de vie Sixam">
+              <span class="pack-label">Mode de vie</span>
               <div class="pack-card-copy">
-                <strong>Le kit qui reste dans le sac.</strong>
-                <p>Visière, brassards UV, bandana et anti-sueur.</p>
-                <div class="price-line">
-                  <span>Pack fondateur</span>
-                  <span>149 EUR</span>
+                <strong>Sport le matin. Soleil toute la journée.</strong>
+                <p>Sixam existe pour garder la même présence avant, pendant et après l'effort.</p>
+                <div class="lifestyle-points" aria-label="Codes Sixam">
+                  <span>Soleil</span>
+                  <span>Effort</span>
+                  <span>Allure</span>
                 </div>
               </div>
             </article>
@@ -810,8 +832,8 @@
 
       <div class="ticker" aria-hidden="true">
         <div class="ticker-track">
-          <span>Plein soleil</span><span>Pack fondateur</span><span>Anti-UV</span><span>Anti-sueur</span><span>Voyage actif</span><span>Rituel d'été</span>
-          <span>Plein soleil</span><span>Pack fondateur</span><span>Anti-UV</span><span>Anti-sueur</span><span>Voyage actif</span><span>Rituel d'été</span>
+          <span>Plein soleil</span><span>Sport dehors</span><span>Voyage actif</span><span>Tenue nette</span><span>Chaleur</span><span>Rituel d'été</span>
+          <span>Plein soleil</span><span>Sport dehors</span><span>Voyage actif</span><span>Tenue nette</span><span>Chaleur</span><span>Rituel d'été</span>
         </div>
       </div>
 
