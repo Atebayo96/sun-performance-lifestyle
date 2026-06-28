@@ -115,6 +115,16 @@ Extension products:
 
 The pack is the offer. Components can be shown, but the page should sell the pack first. Do not race to low pricing.
 
+Updated product strategy:
+
+Sixam should stay accessories-pack-first for launch. This reduces sizing/return complexity and makes sourcing faster. The first products must be visible markers of the lifestyle: visor, UV sleeves, bandana/neck gaiter, anti-sweat pieces, pouch. UPF tops are attractive but should be an extension after the pack validates demand and after fabric/cut tests are strong enough.
+
+Public offer ladder:
+
+1. Pack Plein Soleil: first pack and priority.
+2. Pack Longue Journee: richer travel/day-out version with pouch, towel, cap.
+3. Top UPF 50+: later textile extension, not the first bet.
+
 ## Messaging hierarchy
 
 1. Hero identity: Plein soleil. Sans perdre l'allure.
