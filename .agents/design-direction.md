@@ -1,6 +1,6 @@
 # Sixam - design direction
 
-Date: 2026-06-26
+Date: 2026-06-28
 
 ## Design target
 
@@ -14,6 +14,10 @@ Reference feel:
 - Vuori understated active lifestyle
 
 Sixam should feel expensive, bright and active, not loud or low-cost. The site must sell a lifestyle before it sells product specs.
+
+Current page direction:
+
+The store page is a pack-first lifestyle page, not a classic ecommerce grid. The pack image and the outdoor ritual carry the desire. Product details are secondary proof.
 
 Updated competitive lesson:
 
@@ -38,13 +42,15 @@ Updated competitive lesson:
 - Characteristics should scan in 2 seconds.
 - Avoid big stacked white cards for conceptual explanations. Use editorial rows, visual rhythm, product tiles and short signature chips.
 - Product cards should use real generic product images when supplier photos are not available, instead of drawn mockups or unrelated lifestyle photos.
+- Do not build a product collage as the hero visual. Use a real flat-lay / pack / lifestyle image so the page sells a ritual first.
+- Product images can appear in small rows, but they must not dominate the first viewport.
 
 ## Required page architecture
 
 1. Hero:
    - Brand: SIXAM.
-   - Clear pack promise.
-   - Show the pack visually above the fold.
+   - Clear pack/lifestyle promise.
+   - Show pack/lifestyle visually above the fold.
    - One CTA.
    - One short product/drop note.
 
@@ -93,9 +99,11 @@ Use plain French.
 
 Good:
 
+- Plein soleil. Sans perdre l'allure.
 - Plein soleil. Sans compromis.
 - Le pack qui sort avec toi.
 - Quatre pieces. Un seul reflexe.
+- Un pack. Pas quatre gadgets.
 - Dehors, longtemps.
 - Moins de creme sur les bras, plus de tenue.
 - Les premieres pieces Sixam.
@@ -121,6 +129,7 @@ Bad:
 - Conçu pour padel, running, training et voyages au soleil as hero copy because it makes Sixam feel too narrow and awkward.
 - Performance sociale as a visible label.
 - Page copy that sounds like a brand strategy memo instead of a product/store page.
+- Club language in the active store page. It pulls the page toward a padel/tennis niche and away from broader sunny sport lifestyle.
 
 ## Motion direction
 

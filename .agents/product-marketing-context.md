@@ -1,6 +1,6 @@
 # Sixam - product marketing context
 
-Date: 2026-06-26
+Date: 2026-06-28
 
 ## Brand
 
@@ -18,7 +18,11 @@ The pack you take when the day happens outside.
 
 French hero direction:
 
-Des vêtements anti-UV premium pour les sports au soleil.
+Plein soleil. Sans perdre l'allure.
+
+Current page direction:
+
+Sixam sells the founder pack before it sells individual objects. The public page should feel like the first visible ritual of the brand: one premium kit for sport, heat, travel and long days outside.
 
 Rejected hero line:
 
@@ -97,11 +101,12 @@ The pack is the offer. Components can be shown, but the page should sell the pac
 
 ## Messaging hierarchy
 
-1. Pack promise: le pack qui sort avec toi.
-2. Brand identity: visible discipline, premium active life, sport outside.
-3. Pack components: visiere, brassards, bandana, sweat accessories.
-4. Offer: the founding pack as an entry point into the lifestyle.
-5. Access: founder waitlist.
+1. Hero promise: Plein soleil. Sans perdre l'allure.
+2. Lifestyle identity: long days outside, sport, heat, travel, clean silhouette.
+3. Pack promise: one kit that stays in the bag and comes out when the day is outside.
+4. Pack components: visiere, brassards UV, bandana UV, anti-sweat kit.
+5. Offer: founder pack as the first way to enter Sixam.
+6. Access: founder waitlist.
 
 ## Copy rules
 
@@ -122,6 +127,9 @@ The pack is the offer. Components can be shown, but the page should sell the pac
 - The site must sell belonging first, product utility second.
 - Use lifestyle language: plein soleil, kit, sport dehors, voyage actif, rester net, arriver equipe.
 - For the current store page, use "pack" language before product language: "Le pack qui sort avec toi", "quatre pieces, un seul reflexe", "le pack avant les produits".
+- Updated page line to keep: "Plein soleil. Sans perdre l'allure."
+- Updated product framing: "Un pack. Pas quatre gadgets." This is the internal and public logic for this version.
 - Use Reddit/VOC concreteness: creme qui coule dans les yeux, moins de creme sur les bras, pas de coton trempe, leger, respirant, quick-dry.
 - Avoid abstract manifesto lines. A good line should describe a recognizable situation.
 - Do not overpromise that textile products replace sunscreen. Frame them as a cleaner, more practical routine around sun exposure.
+- Do not use "club" language in the active store page unless the user explicitly brings it back. It makes the page feel like a brief and not the lifestyle Sixam is currently building.
