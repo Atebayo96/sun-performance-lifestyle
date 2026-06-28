@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sixam - Plein soleil, sans compromis</title>
-  <meta name="description" content="Sixam crée des visières, brassards UV, bandanas et accessoires anti-sueur pour jouer, courir, voyager et rester net dehors.">
+  <title>Sixam - Le pack plein soleil</title>
+  <meta name="description" content="Sixam crée un pack d'accessoires anti-UV et anti-sueur pour les journées dehors : visière, brassards UV, bandana et kit anti-sueur.">
   <style>
     :root {
       --ink: #14150f;
@@ -246,6 +246,12 @@
       padding: 112px 0 42px;
     }
 
+    .hero-layout {
+      display: grid;
+      gap: 28px;
+      align-items: end;
+    }
+
     .eyebrow {
       color: var(--olive);
       font-size: 12px;
@@ -303,6 +309,116 @@
       font-weight: 900;
       text-transform: uppercase;
       animation: rise .7s ease both .4s;
+    }
+
+    .pack-stage {
+      position: relative;
+      min-height: 310px;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(20,21,15,.12);
+      background:
+        radial-gradient(circle at 70% 20%, rgba(255,216,79,.52), transparent 26%),
+        linear-gradient(145deg, rgba(255,253,246,.78), rgba(244,234,208,.7));
+      box-shadow: 0 30px 90px rgba(45,43,25,.16);
+      animation: rise .75s ease both .38s;
+    }
+
+    .pack-stage::before {
+      content: "PACK 01";
+      position: absolute;
+      left: 16px;
+      top: 14px;
+      z-index: 3;
+      color: rgba(20,21,15,.42);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    .pack-stage::after {
+      content: "";
+      position: absolute;
+      inset: 34px;
+      border: 1px solid rgba(20,21,15,.08);
+      border-radius: 999px;
+    }
+
+    .pack-item {
+      position: absolute;
+      z-index: 2;
+      width: 42%;
+      max-width: 190px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: rgba(255,253,246,.66);
+      border: 1px solid rgba(20,21,15,.1);
+      box-shadow: 0 22px 42px rgba(45,43,25,.13);
+      backdrop-filter: blur(10px);
+      transform: translate3d(0, calc(var(--scroll, 0) * -8px), 0) rotate(var(--rot));
+      transition: transform .25s ease;
+      animation: packFloat 6s ease-in-out infinite;
+    }
+
+    .pack-item img {
+      width: 82%;
+      height: 82%;
+      object-fit: contain;
+      filter: drop-shadow(0 18px 18px rgba(45,43,25,.12));
+    }
+
+    .pack-item.one {
+      left: 8%;
+      top: 19%;
+      --rot: -7deg;
+    }
+
+    .pack-item.two {
+      right: 9%;
+      top: 10%;
+      --rot: 8deg;
+      animation-delay: -.8s;
+    }
+
+    .pack-item.three {
+      left: 22%;
+      bottom: 8%;
+      --rot: 5deg;
+      animation-delay: -1.6s;
+    }
+
+    .pack-item.four {
+      right: 12%;
+      bottom: 15%;
+      --rot: -5deg;
+      animation-delay: -2.4s;
+    }
+
+    .pack-caption {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 14px;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(20,21,15,.88);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .pack-caption strong {
+      color: var(--sun);
+      font-size: 22px;
+      line-height: 1;
     }
 
     .ticker {
@@ -435,6 +551,73 @@
       font-size: 12px;
       font-weight: 900;
       text-transform: uppercase;
+    }
+
+    .pack-bento {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .bento-card {
+      min-height: 170px;
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--r);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.54);
+      padding: 18px;
+      padding-right: 128px;
+      box-shadow: 0 12px 35px rgba(45,43,25,.08);
+    }
+
+    .bento-card.big {
+      min-height: 250px;
+      padding-right: 18px;
+      background:
+        linear-gradient(135deg, rgba(255,216,79,.35), rgba(188,236,255,.36)),
+        rgba(255,255,255,.58);
+    }
+
+    .bento-card span {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--olive);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    .bento-card strong {
+      display: block;
+      max-width: 520px;
+      font-size: clamp(26px, 7vw, 54px);
+      line-height: .96;
+    }
+
+    .bento-card p {
+      max-width: 520px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .bento-card img {
+      position: absolute;
+      right: -26px;
+      bottom: -14px;
+      width: 138px;
+      height: 138px;
+      object-fit: contain;
+      filter: drop-shadow(0 18px 20px rgba(45,43,25,.14));
+      opacity: .42;
+      transform: translateY(calc(var(--scroll, 0) * -10px));
+    }
+
+    .bento-card.big img {
+      width: 160px;
+      height: 160px;
+      opacity: .5;
     }
 
     .solution-band {
@@ -900,6 +1083,32 @@
       box-shadow: var(--shadow);
     }
 
+    .pack-strip {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pack-pill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(20,21,15,.13);
+      color: rgba(20,21,15,.76);
+      font-weight: 850;
+    }
+
+    .pack-pill:last-child {
+      border-bottom: 0;
+    }
+
+    .pack-pill span {
+      color: var(--ink);
+      font-weight: 950;
+    }
+
     .offer-list {
       display: grid;
       gap: 8px;
@@ -1011,6 +1220,15 @@
       50% { transform: translate3d(-14px, 10px, 0); }
     }
 
+    @keyframes packFloat {
+      0%, 100% {
+        translate: 0 0;
+      }
+      50% {
+        translate: 0 -9px;
+      }
+    }
+
     @keyframes marquee {
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
@@ -1039,6 +1257,27 @@
       .lifestyle-wall {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
+
+      .pack-bento {
+        grid-template-columns: 1.2fr .8fr;
+      }
+
+      .bento-card.big {
+        grid-row: span 2;
+        padding-right: 220px;
+      }
+
+      .bento-card img {
+        width: 170px;
+        height: 170px;
+        opacity: .62;
+      }
+
+      .bento-card.big img {
+        width: 230px;
+        height: 230px;
+        opacity: .72;
+      }
     }
 
     @media (min-width: 860px) {
@@ -1051,6 +1290,8 @@
       .hero-inner { padding-bottom: 72px; }
       .hero-action .btn { min-width: 260px; }
       .sun-disc { right: 3vw; top: 96px; }
+      .hero-layout { grid-template-columns: minmax(0, 1fr) 420px; }
+      .pack-stage { min-height: 480px; }
 
       section { padding: 86px 0; }
 
@@ -1093,9 +1334,9 @@
       <div class="nav-inner">
         <a class="logo" href="#top" aria-label="Sixam accueil">SIXAM</a>
         <nav class="nav-links" aria-label="Navigation principale">
-          <a href="#lifestyle">Mode de vie</a>
-          <a href="#signes">Signes</a>
-          <a href="#collection">Collection</a>
+          <a href="#pack">Le pack</a>
+          <a href="#lifestyle">Usage</a>
+          <a href="#collection">Pièces</a>
           <a href="#waitlist">Accès</a>
         </nav>
         <a class="nav-cta" href="#waitlist">Accès fondateur</a>
@@ -1104,9 +1345,9 @@
         </button>
       </div>
       <nav class="drawer" aria-label="Menu mobile" aria-hidden="true">
-        <a href="#lifestyle">Mode de vie</a>
-        <a href="#signes">Signes</a>
-        <a href="#collection">Collection</a>
+        <a href="#pack">Le pack</a>
+        <a href="#lifestyle">Usage</a>
+        <a href="#collection">Pièces</a>
         <a href="#waitlist">Accès fondateur</a>
       </nav>
     </header>
@@ -1115,13 +1356,36 @@
       <section class="hero" id="top">
         <span class="sun-disc" aria-hidden="true"></span>
         <div class="hero-inner">
-          <p class="eyebrow">Drop 01 / Plein soleil</p>
-          <h1>Plein soleil. Sans compromis.</h1>
-          <p class="hero-copy">Visières, brassards UV et accessoires anti-sueur pour jouer, courir, voyager et rester net dehors.</p>
-          <div class="hero-action">
-            <a class="btn primary" href="#waitlist">Accéder au drop fondateur</a>
+          <div class="hero-layout">
+            <div>
+              <p class="eyebrow">Drop 01 / Pack plein soleil</p>
+              <h1>Le pack qui sort avec toi.</h1>
+              <p class="hero-copy">Visière, brassards UV, bandana et anti-sueur. Un kit court, visible, pensé pour les journées dehors.</p>
+              <div class="hero-action">
+                <a class="btn primary" href="#waitlist">Accéder au pack fondateur</a>
+              </div>
+              <p class="hero-note">Premier drop : 4 accessoires. Un seul pack.</p>
+            </div>
+
+            <div class="pack-stage" aria-label="Pack fondateur Sixam">
+              <div class="pack-item one">
+                <img src="https://www.ezcorporateclothing.com/cdn/shop/files/i7042-i7042-logo-white-FR.png?v=1691178144&width=600" alt="Visière blanche">
+              </div>
+              <div class="pack-item two">
+                <img src="https://silkysocks.com/cdn/shop/products/Arm_Sleeve_Blank_Product_Photo_600x.jpg?v=1626795894" alt="Brassard blanc">
+              </div>
+              <div class="pack-item three">
+                <img src="https://i5.walmartimages.com/seo/SHEVERCH-6-Pack-Neck-Gaiter-Face-Mask-Sun-Protection-Cooling-Bandana-Face-Cover-Windproof-Dustproof-Neck-Scarf_ec5bef0c-332e-4276-b905-d83bba5172b6.3c800fc3791269903f86578279ee3b89.jpeg?odnHeight=300&odnWidth=300&odnBg=FFFFFF" alt="Tour de cou blanc">
+              </div>
+              <div class="pack-item four">
+                <img src="https://i5.walmartimages.com/seo/Suddora-Wrist-Sweatbands-Athletic-Cotton-Terry-Cloth-Wristband-Pair-White_d175149f-6d16-4395-a5e9-299c6130710e_1.9a422ea5a46e7c5982b27430a7ef3897.jpeg?odnHeight=300&odnWidth=300&odnBg=FFFFFF" alt="Poignets anti-sueur blancs">
+              </div>
+              <div class="pack-caption">
+                <span>Pack fondateur</span>
+                <strong>149 EUR</strong>
+              </div>
+            </div>
           </div>
-          <p class="hero-note">Premier drop : visière Sixam, brassards UV, bandana et kit anti-sueur.</p>
         </div>
       </section>
 
@@ -1132,27 +1396,43 @@
         </div>
       </div>
 
+      <section id="pack">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <p class="eyebrow">Le pack</p>
+            <h2>Tout ce qu'il faut avant de sortir au soleil.</h2>
+            <p class="lead">Pas une collection dispersée. Un pack simple : couvrir, absorber, rester léger, garder l'allure.</p>
+          </div>
+
+          <div class="pack-bento">
+            <article class="bento-card big">
+              <span>Pack 01</span>
+              <strong>Un rituel prêt à prendre.</strong>
+              <p>Le pack reste dans le sac. Tu l'ouvres quand la journée passe dehors : terrain, running, training, week-end, voyage.</p>
+              <img src="https://www.ezcorporateclothing.com/cdn/shop/files/i7042-i7042-logo-white-FR.png?v=1691178144&width=600" alt="Visière blanche">
+            </article>
+            <article class="bento-card">
+              <span>UV</span>
+              <strong>Moins de zones exposées.</strong>
+              <p>Brassards et bandana pour couvrir vite, sans ajouter une tenue complète.</p>
+              <img src="https://silkysocks.com/cdn/shop/products/Arm_Sleeve_Blank_Product_Photo_600x.jpg?v=1626795894" alt="Brassard blanc">
+            </article>
+            <article class="bento-card">
+              <span>Sueur</span>
+              <strong>Rester propre.</strong>
+              <p>Visière et anti-sueur pour limiter la crème qui coule, le front trempé, le look rincé.</p>
+              <img src="https://i5.walmartimages.com/seo/Suddora-Wrist-Sweatbands-Athletic-Cotton-Terry-Cloth-Wristband-Pair-White_d175149f-6d16-4395-a5e9-299c6130710e_1.9a422ea5a46e7c5982b27430a7ef3897.jpeg?odnHeight=300&odnWidth=300&odnBg=FFFFFF" alt="Poignets anti-sueur blancs">
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="lifestyle">
         <div class="wrap reveal">
           <div class="section-head">
-            <p class="eyebrow">Mode de vie</p>
-            <h2>Dehors, longtemps.</h2>
-            <p class="lead">Le soleil, la sueur, les trajets, les sessions qui s'enchaînent. Sixam construit les pièces qu'on garde dans le sac quand la journée se passe dehors.</p>
-          </div>
-
-          <div class="signal-list">
-            <div class="signal">
-              <strong>Avant.</strong>
-              <p class="muted">Visière en place, brassards prêts, sac léger. Tu pars équipé.</p>
-            </div>
-            <div class="signal">
-              <strong>Pendant.</strong>
-              <p class="muted">Tu bouges, il fait chaud, tu restes propre. Pas de crème dans les yeux, pas de coton trempé.</p>
-            </div>
-            <div class="signal">
-              <strong>Après.</strong>
-              <p class="muted">Tu ranges le kit, tu repars sans avoir l'air rincé par ta session.</p>
-            </div>
+            <p class="eyebrow">Usage</p>
+            <h2>Tu le mets dans le sac. Tu sais pourquoi.</h2>
+            <p class="lead">Le pack existe pour les journées qui commencent sport et finissent ailleurs. Simple, léger, identifiable.</p>
           </div>
 
           <div class="signature-row" aria-label="Signature Sixam">
@@ -1168,21 +1448,21 @@
               <img src="https://images.pexels.com/photos/23379597/pexels-photo-23379597.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Raquettes sur un court extérieur">
               <div class="moment-copy">
                 <span>Terrain</span>
-                <strong>Là où le kit commence à servir.</strong>
+                <strong>Tu ouvres le sac.</strong>
               </div>
             </article>
             <article class="moment">
               <img src="https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sportive sur court extérieur au soleil">
               <div class="moment-copy">
                 <span>Effort</span>
-                <strong>Chaud, exposé, mais maîtrisé.</strong>
+                <strong>Tu restes net.</strong>
               </div>
             </article>
             <article class="moment">
               <img src="https://images.pexels.com/photos/342361/pexels-photo-342361.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Court extérieur ensoleillé">
               <div class="moment-copy">
                 <span>Voyage</span>
-                <strong>Le même sac pour jouer et partir.</strong>
+                <strong>Tu repars léger.</strong>
               </div>
             </article>
           </div>
@@ -1194,14 +1474,14 @@
           <div class="solution-layout">
             <div>
               <div class="section-head">
-                <p class="eyebrow">Les signes Sixam</p>
-                <h2>Peu de pièces. Beaucoup d'usage.</h2>
-                <p class="lead">La visière, les brassards, le bandana. Trois objets simples pour couvrir, absorber, respirer et rester présentable dehors.</p>
+                <p class="eyebrow">Positionnement</p>
+                <h2>Pas une tenue. Un système.</h2>
+                <p class="lead">Sixam commence par les accessoires qui changent vraiment une journée dehors : tête, bras, cou, sueur.</p>
               </div>
 
               <div class="brand-line">
-                <p>Sixam ne cherche pas à tout habiller. La marque se concentre sur les zones que le soleil et la sueur attaquent en premier.</p>
-                <p>La technique rassure : UPF, séchage rapide, gestion de la sueur. L'allure fait le reste.</p>
+                <p>Le pack donne une présence de marque immédiate, sans demander une tenue complète.</p>
+                <p>La technique rassure : UPF, séchage rapide, gestion de la sueur. Le pack rend l'usage évident.</p>
               </div>
             </div>
 
@@ -1222,9 +1502,9 @@
       <section id="collection">
         <div class="wrap reveal">
           <div class="section-head">
-            <p class="eyebrow">Collection solaire</p>
-            <h2>Les premières pièces Sixam.</h2>
-            <p class="lead">Une sélection courte, facile à porter, pensée pour servir d'abord et se remarquer ensuite.</p>
+            <p class="eyebrow">Dans le pack</p>
+            <h2>Quatre pièces. Un seul réflexe.</h2>
+            <p class="lead">Chaque objet a son rôle. Ensemble, ils deviennent le pack Sixam.</p>
           </div>
 
           <div class="collection-grid">
@@ -1235,10 +1515,10 @@
               </div>
               <div class="product-body">
                 <div class="product-line">
-                  <span>Visière Sixam</span>
+                  <span>01 / Visière</span>
                   <span class="price">49 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Le premier objet qu'on remarque.</p>
+                <p class="muted" style="margin-top:10px;">Ombre, sueur, signature.</p>
                 <div class="specs">
                   <span class="spec">signature</span>
                   <span class="spec">anti-sueur</span>
@@ -1254,10 +1534,10 @@
               </div>
               <div class="product-body">
                 <div class="product-line">
-                  <span>Brassards UV</span>
+                  <span>02 / Brassards UV</span>
                   <span class="price">35 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Moins de crème sur les bras, plus de tenue.</p>
+                <p class="muted" style="margin-top:10px;">Moins de crème sur les bras.</p>
                 <div class="specs">
                   <span class="spec">UPF cible</span>
                   <span class="spec">bras</span>
@@ -1273,10 +1553,10 @@
               </div>
               <div class="product-body">
                 <div class="product-line">
-                  <span>Bandana UV</span>
+                  <span>03 / Bandana UV</span>
                   <span class="price">39 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Cou, nuque, tête : le geste soleil.</p>
+                <p class="muted" style="margin-top:10px;">Cou, nuque, tête.</p>
                 <div class="specs">
                   <span class="spec">modulable</span>
                   <span class="spec">voyage</span>
@@ -1292,10 +1572,10 @@
               </div>
               <div class="product-body">
                 <div class="product-line">
-                  <span>Top UPF 50+</span>
+                  <span>Extension / Top UPF</span>
                   <span class="price">95 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Pour les longues sessions exposées.</p>
+                <p class="muted" style="margin-top:10px;">La pièce à tester après le pack.</p>
                 <div class="specs">
                   <span class="spec">UPF cible</span>
                   <span class="spec">quick-dry</span>
@@ -1311,10 +1591,10 @@
               </div>
               <div class="product-body">
                 <div class="product-line">
-                  <span>Sweat Control Kit</span>
+                  <span>04 / Anti-sueur</span>
                   <span class="price">35 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Bandeau, poignets, serviette. Le propre dans le sac.</p>
+                <p class="muted" style="margin-top:10px;">Le propre dans le sac.</p>
                 <div class="specs">
                   <span class="spec">anti-sueur</span>
                   <span class="spec">sac sport</span>
@@ -1336,7 +1616,7 @@
                   <span>Pack fondateur</span>
                   <span class="price">149 EUR</span>
                 </div>
-                <p class="muted" style="margin-top:10px;">Le nécessaire Sixam pour jouer dehors.</p>
+                <p class="muted" style="margin-top:10px;">Visière, brassards, bandana, anti-sueur.</p>
                 <div class="specs">
                   <span class="spec">drop limité</span>
                   <span class="spec">premium</span>
@@ -1353,15 +1633,15 @@
           <div class="offer-panel">
             <div>
               <p class="eyebrow">Offre fondatrice</p>
-              <h2>Le kit qu'on garde dans le sac.</h2>
-              <p class="lead" style="margin-top:14px;">Visière, brassards, bandana, anti-sueur. Le nécessaire pour sortir au soleil sans finir trempé, marqué, mal équipé.</p>
+              <h2>Le pack avant les produits.</h2>
+              <p class="lead" style="margin-top:14px;">On lance une habitude, pas un catalogue. Quatre accessoires, un seul prix, un usage clair : sortir au soleil mieux équipé.</p>
             </div>
             <div>
               <div class="offer-list">
-                <div class="offer-item"><span>Visière Sixam</span><strong>49 EUR</strong></div>
-                <div class="offer-item"><span>Brassards UV</span><strong>35 EUR</strong></div>
-                <div class="offer-item"><span>Bandana UV</span><strong>39 EUR</strong></div>
-                <div class="offer-item"><span>Sweat Control Kit</span><strong>35 EUR</strong></div>
+                <div class="offer-item"><span>01 / Visière</span><strong>49 EUR</strong></div>
+                <div class="offer-item"><span>02 / Brassards UV</span><strong>35 EUR</strong></div>
+                <div class="offer-item"><span>03 / Bandana UV</span><strong>39 EUR</strong></div>
+                <div class="offer-item"><span>04 / Anti-sueur</span><strong>35 EUR</strong></div>
               </div>
               <div class="total">
                 <div>
@@ -1379,8 +1659,8 @@
         <div class="wrap reveal">
           <div class="waitlist">
             <p class="eyebrow">Accès fondateur</p>
-            <h2>Accède au premier drop Sixam.</h2>
-            <p class="lead">Aucun paiement maintenant. Tu reçois les tests matières, les couleurs retenues et l'accès au premier drop.</p>
+            <h2>Accède au pack fondateur.</h2>
+            <p class="lead">Aucun paiement maintenant. Tu reçois les tests matières, les couleurs retenues et l'accès au premier pack Sixam.</p>
             <form class="form" action="mailto:hello@sixam.test" method="post" enctype="text/plain">
               <input type="email" name="email" placeholder="ton email" aria-label="Email">
               <button class="btn sun" type="submit">Recevoir l'accès</button>
@@ -1428,6 +1708,14 @@
     }, { threshold: 0.16 });
 
     document.querySelectorAll('.reveal, .product, .moment').forEach((el) => observer.observe(el));
+
+    const updateScrollMotion = () => {
+      const progress = Math.min(window.scrollY / Math.max(window.innerHeight, 1), 1);
+      document.documentElement.style.setProperty('--scroll', progress.toFixed(3));
+    };
+
+    updateScrollMotion();
+    window.addEventListener('scroll', updateScrollMotion, { passive: true });
   </script>
 </body>
 </html>

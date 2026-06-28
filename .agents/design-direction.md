@@ -43,20 +43,25 @@ Updated competitive lesson:
 
 1. Hero:
    - Brand: SIXAM.
-   - Clear lifestyle promise.
+   - Clear pack promise.
+   - Show the pack visually above the fold.
    - One CTA.
    - One short product/drop note.
 
-2. Lifestyle:
+2. Pack:
+   - Sell the full pack before individual products.
+   - Explain what the pack does: cover, absorb, stay light, keep the look clean.
+
+3. Usage:
    - Effort, sun, weekend, travel.
    - Make visitors recognize the life they want to signal.
 
-3. Signs:
+4. Pieces:
    - Show the Sixam product world.
    - Accessories as style markers.
    - Technical benefits stay secondary.
 
-4. Offer:
+5. Offer:
    - Visiere Sixam.
    - Brassards UV.
    - Bandana UV.
@@ -64,7 +69,7 @@ Updated competitive lesson:
    - Top UPF.
    - Founder pack.
 
-5. Waitlist:
+6. Waitlist:
    - Founder access.
    - No payment now.
 
@@ -89,6 +94,8 @@ Use plain French.
 Good:
 
 - Plein soleil. Sans compromis.
+- Le pack qui sort avec toi.
+- Quatre pieces. Un seul reflexe.
 - Dehors, longtemps.
 - Moins de creme sur les bras, plus de tenue.
 - Les premieres pieces Sixam.

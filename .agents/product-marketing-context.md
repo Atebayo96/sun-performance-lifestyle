@@ -14,7 +14,7 @@ Sixam sells a premium sport-under-the-sun lifestyle through anti-UV performance 
 
 Clear value proposition:
 
-Stay protected, dry and well-dressed when the sun hits.
+The pack you take when the day happens outside.
 
 French hero direction:
 
@@ -82,25 +82,25 @@ Sixam is not:
 
 Founding drop:
 
-- Visiere Sixam: 49 EUR.
-- UV armbands / brassards: 35 EUR.
-- Bandana UV: 39 EUR.
-- Sweat Control Kit: 35 EUR.
 - Founder Pack: 149 EUR.
+- Component 01: Visiere Sixam, value 49 EUR.
+- Component 02: UV armbands / brassards, value 35 EUR.
+- Component 03: Bandana UV, value 39 EUR.
+- Component 04: Sweat Control Kit, value 35 EUR.
 
 Extension products:
 
 - Top UPF 50+ target: 95 EUR.
 - Sixam Sun Cap / cap variant: 55 EUR.
 
-The offer should feel premium. Do not race to low pricing.
+The pack is the offer. Components can be shown, but the page should sell the pack first. Do not race to low pricing.
 
 ## Messaging hierarchy
 
-1. Lifestyle promise: plein soleil, sans compromis.
+1. Pack promise: le pack qui sort avec toi.
 2. Brand identity: visible discipline, premium active life, sport outside.
-3. Product signatures: visiere, brassards, bandana, sweat accessories, then apparel.
-4. Offer: the founding kit as an entry point into the lifestyle.
+3. Pack components: visiere, brassards, bandana, sweat accessories.
+4. Offer: the founding pack as an entry point into the lifestyle.
 5. Access: founder waitlist.
 
 ## Copy rules
@@ -117,10 +117,11 @@ The offer should feel premium. Do not race to low pricing.
 - Avoid over-listing sports in the hero. The brand is bigger than padel. Use "sports au soleil" and "voyage" first, then specific sports only as examples deeper on the page.
 - The public page is not the research brief. Do not expose matrices, competitor logic or internal positioning explanations.
 - Avoid big stacked explanation cards for UV / sweat / style. Use lighter editorial rows, product visuals, short signatures and collection cards.
-- First visible product signals should be Sixam-branded accessories: visiere first, brassards second.
+- First visible product signals should be the complete pack, then components: visiere first, brassards second.
 - Never present products as isolated gadgets. Each product is a visible sign of the Sixam lifestyle.
 - The site must sell belonging first, product utility second.
 - Use lifestyle language: plein soleil, kit, sport dehors, voyage actif, rester net, arriver equipe.
+- For the current store page, use "pack" language before product language: "Le pack qui sort avec toi", "quatre pieces, un seul reflexe", "le pack avant les produits".
 - Use Reddit/VOC concreteness: creme qui coule dans les yeux, moins de creme sur les bras, pas de coton trempe, leger, respirant, quick-dry.
 - Avoid abstract manifesto lines. A good line should describe a recognizable situation.
 - Do not overpromise that textile products replace sunscreen. Frame them as a cleaner, more practical routine around sun exposure.
