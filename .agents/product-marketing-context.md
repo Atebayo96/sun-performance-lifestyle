@@ -24,6 +24,10 @@ Current page direction:
 
 Sixam sells the founder pack before it sells individual objects. The public page should feel like the first visible ritual of the brand: one premium kit for sport, heat, travel and long days outside.
 
+Visual direction:
+
+Use generated Sixam campaign visuals showing the mode de vie: stylish adults, outdoor court, heat, travel bag, white sun-performance accessories, premium summer light. The product should feel like part of a life people want to enter, not a supplier catalog.
+
 Rejected hero line:
 
 "Reste net quand le soleil tape" is too vague. It hints at sweat/style but does not clearly say anti-UV, sport, or premium. It can be used as a secondary line, not the main value proposition.
@@ -133,3 +137,4 @@ The pack is the offer. Components can be shown, but the page should sell the pac
 - Avoid abstract manifesto lines. A good line should describe a recognizable situation.
 - Do not overpromise that textile products replace sunscreen. Frame them as a cleaner, more practical routine around sun exposure.
 - Do not use "club" language in the active store page unless the user explicitly brings it back. It makes the page feel like a brief and not the lifestyle Sixam is currently building.
+- CTA direction: avoid heavy black ecommerce buttons. Use premium solar CTA styling and copy like "Demander l'accès" with a small reassurance note nearby.

@@ -19,6 +19,10 @@ Current page direction:
 
 The store page is a pack-first lifestyle page, not a classic ecommerce grid. The pack image and the outdoor ritual carry the desire. Product details are secondary proof.
 
+Updated image direction:
+
+Use custom generated Sixam campaign imagery for the store instead of generic stock or supplier photos. The page should show stylish active adults living the sunny sport lifestyle, with the pack visible as part of the routine. Product rows can use crops from the generated pack flat-lay to stay visually coherent.
+
 Updated competitive lesson:
 
 - Asian anti-UV brands: strong feature systems, but often too utilitarian for Sixam.
@@ -44,6 +48,7 @@ Updated competitive lesson:
 - Product cards should use real generic product images when supplier photos are not available, instead of drawn mockups or unrelated lifestyle photos.
 - Do not build a product collage as the hero visual. Use a real flat-lay / pack / lifestyle image so the page sells a ritual first.
 - Product images can appear in small rows, but they must not dominate the first viewport.
+- Avoid mixing supplier product photos with lifestyle campaign images on the public page. It makes the brand feel cheap and inconsistent.
 
 ## Required page architecture
 
@@ -140,6 +145,7 @@ Allowed:
 - Scroll reveal for sections.
 - Minimal mobile menu animation.
 - A slow technical marquee for product specs.
+- CTA hover lift and arrow micro-interaction, as long as it stays premium and does not feel like a discount store button.
 
 Avoid:
 

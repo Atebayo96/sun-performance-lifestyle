@@ -159,14 +159,34 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0 20px;
-      border: 1px solid transparent;
-      border-radius: 8px;
-      background: var(--ink);
-      color: var(--paper);
+      gap: 14px;
+      padding: 0 10px 0 22px;
+      border: 1px solid rgba(18,20,15,.18);
+      border-radius: 999px;
+      background: linear-gradient(135deg, #fffdf6, var(--sun));
+      color: var(--ink);
       font-weight: 950;
       cursor: pointer;
-      box-shadow: 0 18px 42px rgba(18,20,15,.18);
+      box-shadow: 0 18px 46px rgba(255,216,79,.28), 0 12px 28px rgba(18,20,15,.12);
+      transition: transform .24s ease, box-shadow .24s ease;
+    }
+
+    .btn::after {
+      content: "→";
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--paper);
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 54px rgba(255,216,79,.32), 0 16px 36px rgba(18,20,15,.14);
     }
 
     .hero {
@@ -187,7 +207,7 @@
       background:
         linear-gradient(90deg, rgba(255,247,228,.92), rgba(255,247,228,.54) 52%, rgba(255,216,79,.1)),
         linear-gradient(180deg, rgba(255,247,228,.05), rgba(255,247,228,.95) 92%),
-        url("https://www.shopdoubletake.com/cdn/shop/articles/360-6J1A0320_2048x.jpg?v=1718251051") center/cover;
+        url("assets/sixam-hero-lifestyle.webp") center/cover;
       transform: scale(1.05);
       animation: slowZoom 16s ease-out forwards;
     }
@@ -258,8 +278,20 @@
     }
 
     .hero-action {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
       margin-top: 26px;
       animation: rise .72s ease both .32s;
+    }
+
+    .hero-action-note {
+      max-width: 210px;
+      color: rgba(18,20,15,.56);
+      font-size: 12px;
+      font-weight: 850;
+      text-transform: uppercase;
     }
 
     .pack-card {
@@ -270,7 +302,7 @@
       overflow: hidden;
       background:
         linear-gradient(180deg, rgba(255,253,246,.78), rgba(244,227,191,.72)),
-        url("https://www.shopdoubletake.com/cdn/shop/articles/360-6J1A0320_2048x.jpg?v=1718251051") center/cover;
+        url("assets/sixam-pack-flatlay.webp") center/cover;
       box-shadow: var(--shadow);
       animation: rise .76s ease both .38s;
     }
@@ -466,7 +498,7 @@
       border-radius: 24px;
       background:
         linear-gradient(180deg, rgba(255,253,246,.74), rgba(244,227,191,.6)),
-        url("https://www.shopdoubletake.com/cdn/shop/articles/360-6J1A0320_2048x.jpg?v=1718251051") center/cover;
+        url("assets/sixam-pack-flatlay.webp") center/cover;
       box-shadow: var(--shadow);
     }
 
@@ -513,12 +545,16 @@
     .pack-row img {
       width: 78px;
       height: 78px;
-      object-fit: contain;
+      object-fit: cover;
       border-radius: 12px;
       background: rgba(255,255,255,.66);
       border: 1px solid rgba(18,20,15,.09);
-      padding: 6px;
     }
+
+    .pack-row:nth-child(1) img { object-position: 12% 25%; }
+    .pack-row:nth-child(2) img { object-position: 78% 42%; }
+    .pack-row:nth-child(3) img { object-position: 18% 72%; }
+    .pack-row:nth-child(4) img { object-position: 54% 78%; }
 
     .pack-row span {
       display: block;
@@ -617,7 +653,7 @@
     .form-section {
       background:
         linear-gradient(90deg, rgba(18,20,15,.76), rgba(18,20,15,.24)),
-        url("https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=1800") center/cover;
+        url("assets/sixam-ritual-after.webp") center/cover;
       color: var(--paper);
       border-bottom: 0;
     }
@@ -752,7 +788,8 @@
               <h1>Plein soleil. Sans perdre l'allure.</h1>
               <p class="hero-copy">Le premier pack Sixam réunit les essentiels pour les journées de sport, de chaleur et de voyage.</p>
               <div class="hero-action">
-                <a class="btn" href="#waitlist">Accéder au pack fondateur</a>
+                <a class="btn" href="#waitlist">Demander l'accès</a>
+                <p class="hero-action-note">Pack fondateur limité / aucun paiement maintenant</p>
               </div>
             </div>
 
@@ -788,21 +825,21 @@
 
           <div class="ritual">
             <article class="ritual-card">
-              <img src="https://images.pexels.com/photos/23379597/pexels-photo-23379597.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Raquettes dans un sac sur terrain extérieur">
+              <img src="assets/sixam-ritual-before.webp" alt="Sac Sixam préparé avant une session de sport au soleil">
               <div class="ritual-copy">
                 <span>Avant</span>
                 <strong>Tu pars équipé.</strong>
               </div>
             </article>
             <article class="ritual-card">
-              <img src="https://images.pexels.com/photos/34061934/pexels-photo-34061934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sportive au soleil avec raquette">
+              <img src="assets/sixam-ritual-during.webp" alt="Deux sportifs portant les accessoires Sixam en plein soleil">
               <div class="ritual-copy">
                 <span>Pendant</span>
                 <strong>Tu tiens la chaleur.</strong>
               </div>
             </article>
             <article class="ritual-card">
-              <img src="https://www.shopdoubletake.com/cdn/shop/articles/360-6J1A0320_2048x.jpg?v=1718251051" alt="Sac et affaires de sport pour voyage">
+              <img src="assets/sixam-ritual-after.webp" alt="Moment après sport avec le sac et les accessoires Sixam">
               <div class="ritual-copy">
                 <span>Après</span>
                 <strong>Tu gardes l'allure.</strong>
@@ -830,7 +867,7 @@
 
               <div class="pack-list">
                 <div class="pack-row">
-                  <img src="https://www.ezcorporateclothing.com/cdn/shop/files/i7042-i7042-logo-white-FR.png?v=1691178144&width=600" alt="Visière blanche">
+                  <img src="assets/sixam-pack-flatlay.webp" alt="Visière blanche du pack Sixam">
                   <div>
                     <span>01 / Visage</span>
                     <strong>Visière Sixam</strong>
@@ -838,7 +875,7 @@
                   </div>
                 </div>
                 <div class="pack-row">
-                  <img src="https://silkysocks.com/cdn/shop/products/Arm_Sleeve_Blank_Product_Photo_600x.jpg?v=1626795894" alt="Brassard blanc">
+                  <img src="assets/sixam-pack-flatlay.webp" alt="Brassards UV blancs du pack Sixam">
                   <div>
                     <span>02 / Bras</span>
                     <strong>Brassards UV</strong>
@@ -846,7 +883,7 @@
                   </div>
                 </div>
                 <div class="pack-row">
-                  <img src="https://i5.walmartimages.com/seo/SHEVERCH-6-Pack-Neck-Gaiter-Face-Mask-Sun-Protection-Cooling-Bandana-Face-Cover-Windproof-Dustproof-Neck-Scarf_ec5bef0c-332e-4276-b905-d83bba5172b6.3c800fc3791269903f86578279ee3b89.jpeg?odnHeight=300&odnWidth=300&odnBg=FFFFFF" alt="Tour de cou blanc">
+                  <img src="assets/sixam-pack-flatlay.webp" alt="Bandana UV blanc du pack Sixam">
                   <div>
                     <span>03 / Cou</span>
                     <strong>Bandana UV</strong>
@@ -854,7 +891,7 @@
                   </div>
                 </div>
                 <div class="pack-row">
-                  <img src="https://i5.walmartimages.com/seo/Suddora-Wrist-Sweatbands-Athletic-Cotton-Terry-Cloth-Wristband-Pair-White_d175149f-6d16-4395-a5e9-299c6130710e_1.9a422ea5a46e7c5982b27430a7ef3897.jpeg?odnHeight=300&odnWidth=300&odnBg=FFFFFF" alt="Poignets anti-sueur blancs">
+                  <img src="assets/sixam-pack-flatlay.webp" alt="Accessoires anti-sueur blancs du pack Sixam">
                   <div>
                     <span>04 / Sueur</span>
                     <strong>Kit anti-sueur</strong>
